@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Fab, Action } from 'react-tiny-fab';
-import Title from './Title';
-import Foreword from './Foreword';
-import Story from './Story';
+import Title from './Sections/Title';
+import Foreword from './Sections/Foreword';
+import Story from './Sections/Story';
 import 'react-tiny-fab/dist/styles.css';
 import { Language } from './LanguageConstant';
 
@@ -54,7 +54,7 @@ class App extends React.Component {
       <Action style={actionButtonStyles}
         text="Chinese"
         onClick={() => this.onLanguageChange(Language.Chinese)}>
-        🇨🇳
+        🇭🇰
       </Action>
       <Action style={actionButtonStyles}
       text="Spanish"
