@@ -1,0 +1,17 @@
+#foreword {
+  padding: 15rem 0 10rem 0;
+  height: 100vh;
+  margin-top: -15rem;
+  margin-bottom: -1px;
+
+  @include respond(tab-land) {
+    padding: 10rem 0;
+    margin-top: 0;
+  }
+
+  .foreword-wrapper {
+    text-align: center;
+    backface-visibility: hidden;
+  }
+
+}
