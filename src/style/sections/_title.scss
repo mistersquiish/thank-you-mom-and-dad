@@ -1,11 +1,151 @@
 #title {
   padding: 0rem;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
 
   .content-container {
-    display: flex;
-    flex-direction: column;
     height: 100%;
+  }
+
+  .header {
+    background-color: $white-color;
+    color: $dark-grey;
+    display: relative;
+    margin-top: 0 auto;
+  
+    @include respond(phone) {
+      border: 0px;
+    }
+  
+    &__text {
+      color: darken(white, 50%);
+      font-size: 1.3rem;
+  
+      a {
+        color: darken(white, 50%);
+        font-size: 1.3rem;
+        transition: all 0.4s;
+        display: inline-block;
+        background-color: $dark-grey;
+  
+        &:hover,
+        &:active {
+          color: $primary-color;
+          -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+        }
+      }
+    }
+  
+    & hr {
+      margin-top: 32.5px;
+      border: 0;
+      width: 15%;
+      border-top: 2px solid rgba(0, 0, 0, .3);
+    }
+  }
+
+  // .message-wrapper {
+  //   text-align: center;
+  //   max-width: 50rem;
+  //   backface-visibility: hidden;
+  //   padding: 1rem;
+  //   margin: auto;
+  // }
+
+  // .letter {
+  //   margin: auto;
+  //   margin-top: 12vh;
+  //   max-width: 75rem;
+  //   display: flex;
+  //   align-items: center;
+  //   height: 30rem;
+  //   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  //   transition: 0.3s;
+  //   background-image: url("https://inspirationhut.net/wp-content/uploads/2014/09/craft-paper.jpg");
+  //   background-size: cover;
+
+  //   @include respond(tab-port) {
+  //     height: 25rem;
+  //     margin-top: 20vh;
+  //   }
+  // }
+
+  // .letter:hover {
+  //   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  // }
+  .envelope-container {
+    margin: 400px 0 0 0;
+  }
+  
+  .envelope {
+    position: relative;
+    margin: 50px auto 0;
+    width: 98px;
+    height: 66px;
+    background: #c94548;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 1px #c94548 inset;
+    margin-top: auto;
+    box-shadow: 0 6px 2px -2px gray;
+    touch-action: none;
+  }
+  .envelope:before,
+  .envelope:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-width: 33px 49px;
+  }
+  
+  .envelope:before {
+    border-bottom-color: #c94548;
+    top: -99%;
+    width: 99px;
+    left: -1px;
+  }
+  .envelope:after {
+    border-right-color: #ed4c50;
+    border-left-color: #fa565a;
+    border-bottom-color: #fa565a;
+    top: 0;
+    border-radius: 0 0 5px 5px;
+    transform: rotate(360deg);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+  }
+  
+  .paper {
+    background-image: url("https://inspirationhut.net/wp-content/uploads/2014/09/craft-paper.jpg");
+    width: 87px;
+    height: 66px;
+    margin: 0 auto;
+    border-radius: 5px;
+    position: absolute;
+    left: 6px;
+    top: -33px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+  }
+  .paper:before {
+    top: 14px; 
+    width: 31px;
+  }
+  .paper:after {
+    right: 12px;
+    top: 28px;
+    box-shadow:
+      0 8px 0 #e3f1fc,
+      0 16px 0 #e3f1fc,
+      0 24px 0 #e3f1fc,
+      0 40px 0 #e3f1fc;
+  } 
+
+  .paper:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
 
   .message-wrapper {
@@ -14,27 +154,5 @@
     backface-visibility: hidden;
     padding: 1rem;
     margin: auto;
-  }
-
-  .letter {
-    margin: auto;
-    margin-top: 12vh;
-    max-width: 75rem;
-    display: flex;
-    align-items: center;
-    height: 30rem;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    background-image: url("https://inspirationhut.net/wp-content/uploads/2014/09/craft-paper.jpg");
-    background-size: cover;
-
-    @include respond(tab-port) {
-      height: 25rem;
-      margin-top: 20vh;
-    }
-  }
-
-  .letter:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
 }
