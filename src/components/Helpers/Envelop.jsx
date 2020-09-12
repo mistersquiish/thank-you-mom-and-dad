@@ -39,9 +39,15 @@ function Paper({isOpened, setIsOpened, lang}) {
   const [didSetDown, setDidSetDown] = useState(false);
 
   const bind = useDrag(({ down, movement: [x, y] }) => {
-    if (didSetDown === true) {
-      return;
-    }
+    // if (didSetDown === true) {
+    //   set({
+    //     x: down ? x : 0,
+    //     y: down ? y -200 : -200,
+    //     scale: down ? 1.1 : 1,
+    //     immediate: down
+    //   })
+    //   return;
+    // }
 
     // if envelop is already opened, don't move
     if (isOpened === true && !down) {
@@ -57,34 +63,37 @@ function Paper({isOpened, setIsOpened, lang}) {
     var newYValue = y;
 
     // prevent dragging into the side of envelope
-    if (x > -100 && x < 100 && y > -34) {
+    if (x > -100 && x < 100 && y > -34 && !didSetDown) {
       newXValue = 0;
     }
 
+    // prevent dragging outside window
+    if (x < -225) {
+      newXValue = -225;
+    } else if (x > 225) {
+      newXValue = 225;
+    }
+
     // prevent dragging below envelope
-    if (y > 20) {
-      newYValue = 0;
+    if (y > 50) {
+      newYValue = 50;
     }
 
     set({
       x: down ? newXValue : 0,
-      y: down ? newYValue : 0,
+      y: down ? (didSetDown ? newYValue -200 : newYValue) : (didSetDown ? -200 : 0),
       scale: down ? 1.1 : 1,
       immediate: down
     })
 
-    if (newYValue < -175) {
+    if (newYValue < -165) {
       setIsOpened(true);
     }
   })
 
   const paperStyle = {
-    // height: isDesktop ? 200 : 280,
-    // width: isDesktop ? 450 : 310,
-    // left: isDesktop ? -177 : -105,
-    // top: isDesktop ? -150 : -250,
     width: 87,
-    height: 66,
+    height: 120,
     left: 6,
     top: -33,
   }
@@ -125,13 +134,14 @@ function Envelope({lang}) {
 
 
   return (
-    // <div className="envelope-container">
-      <animated.div style={{transform: y.interpolate(y => `translateY(${ y}px`)}}>
-          <div className="envelope" >
-            <Paper isOpened={isOpened} setIsOpened={setIsOpened} lang={lang}/>
-          </div>
-      </animated.div>
-    // </div>
+    <animated.div style={{transform: y.interpolate(y => `translateY(${ y}px`)}}>
+        <div className="envelope" >
+          <div className="envelope-bottom" />
+          <div className="envelope-lining" />
+          <div className="envelope-symbol" />
+          <Paper isOpened={isOpened} setIsOpened={setIsOpened} lang={lang}/>
+        </div>
+    </animated.div>
   )
 }
 

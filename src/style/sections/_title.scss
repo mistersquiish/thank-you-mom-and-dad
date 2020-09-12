@@ -50,7 +50,7 @@
 
   .envelope-container {
     margin-top: auto;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 
     @include respond(phone) {
       margin-bottom: 120px;
@@ -62,11 +62,8 @@
     margin: 50px auto 0;
     width: 98px;
     height: 66px;
-    background: #c94548;
-    border-radius: 0 0 5px 5px;
-    box-shadow: 0 0 1px #c94548 inset;
+    background: #8A0100;
     margin-top: auto;
-    box-shadow: 0 6px 2px -2px gray;
     touch-action: none;
   }
   .envelope:before,
@@ -80,39 +77,73 @@
   }
   
   .envelope:before {
-    border-bottom-color: #c94548;
+    border-bottom-color: #8A0100;
     top: -99%;
     width: 99px;
     left: -1px;
   }
   .envelope:after {
-    border-right-color: #ed4c50;
-    border-left-color: #fa565a;
-    border-bottom-color: #fa565a;
+    border-right-color: #D00E0E;
+    border-left-color: #D00E0E;
+    border-bottom-color: #D00E0E;
     top: 0;
-    border-radius: 0 0 5px 5px;
     transform: rotate(360deg);
-    box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+  }
+
+  .envelope-bottom {
+    position: absolute;
+    top: 65px;
+    width: 98px;
+    height: 50px;
+    background: #D00E0E;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 3px 1px rgba(0,0,0,0.25);
+    z-index: 1;
+  }
+
+  .envelope-lining {
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    width: 87px;
+    height: 105px;
+    background: transparent;
+    border-color: #FFCC00;
+    border-top-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    z-index: 1;
+  }
+
+  .envelope-symbol {
+    position: absolute;
+    background-image: url("../images/red-envelope-symbol.png");
+    background-size: contain;
+    top: 45px;
+    left: 24.5px;
+    height: 50px;
+    width: 50px;
+    z-index: 2;
   }
   
   .paper {
     background-image: url("https://inspirationhut.net/wp-content/uploads/2014/09/craft-paper.jpg");
     width: 450px;
-    height: 200px;
+    height: 30vh;
     margin: 0 auto;
     border-radius: 5px;
     position: absolute;
     left: -177px;
-    top: -150px;
+    top: -10vh;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     display: flex;
     align-items: center;
 
     @include respond(phone) {
-      height: 280px;
+      height: 200px;
       width: 310px;
       left: -105px;
-      top: -250px;
+      top: -200px;
     }
   }
   .paper:before {
@@ -139,5 +170,6 @@
     backface-visibility: hidden;
     padding: 1rem;
     margin: auto;
+    font-size: $default-font-size;
   }
 }
