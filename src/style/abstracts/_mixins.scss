@@ -21,9 +21,9 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
     }
     // Phone
     @if $breakpoint == phone {
-      @media (max-width: 37.5em) {
+      @media (max-width: 28.1875em) {
         @content;
-      } //0 - 600px
+      } //0 - 771px
     }
     // Table Portrait
     @if $breakpoint == tab-port {

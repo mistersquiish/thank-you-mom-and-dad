@@ -23,12 +23,17 @@ const Title = ({lang}) => {
   return (
     <section id="title">
       
-      <Container className="justify-content-center content-container">
+      <Container className="content-container">
         <Header />
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-          
-          <Envelop lang={lang}/>
-        </Fade>
+        
+        <div className="envelope-container">
+          {/* <div className="envelope-container"> */}
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+              <Envelop lang={lang}/>
+          </Fade>
+          {/* </div> */}
+        </div>
+
       </Container>
 
     </section>

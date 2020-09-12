@@ -36,11 +36,9 @@ function Paper({isOpened, setIsOpened, lang}) {
     scale: 1,
   }))
 
-  const [down, setIsDown] = useState(false);
   const [didSetDown, setDidSetDown] = useState(false);
 
   const bind = useDrag(({ down, movement: [x, y] }) => {
-    setIsDown(down);
     if (didSetDown === true) {
       return;
     }
@@ -81,10 +79,14 @@ function Paper({isOpened, setIsOpened, lang}) {
   })
 
   const paperStyle = {
-    height: (isOpened && didSetDown) ? (isDesktop ? 200 : 280) : 66,
-    width: (isOpened && didSetDown) ? (isDesktop ? 450 : 310) : 87,
-    left: (isOpened && didSetDown) ? (isDesktop ? -177 : -110) : 6,
-    top: (isOpened && didSetDown) ? (isDesktop ? -150 : -200) : -33,
+    // height: isDesktop ? 200 : 280,
+    // width: isDesktop ? 450 : 310,
+    // left: isDesktop ? -177 : -105,
+    // top: isDesktop ? -150 : -250,
+    width: 87,
+    height: 66,
+    left: 6,
+    top: -33,
   }
   
   const LetterContents = () => {
@@ -104,10 +106,8 @@ function Paper({isOpened, setIsOpened, lang}) {
 
   return (
     <animated.div {...bind()} style={{transform: interpolate([props.x, props.y, props.scale], (x, y, s) => `translate3d(${x}px,${y}px,0) scale(${s})`) }}>
-        <div className="paper" style={paperStyle}>
-          <div className="letter">
-            <LetterContents />
-          </div>
+        <div className="paper" style={(isOpened && didSetDown) ? {} : paperStyle}>
+          <LetterContents />
         </div>
     </animated.div>
   )
@@ -125,13 +125,13 @@ function Envelope({lang}) {
 
 
   return (
-    <div className="envelope-container">
+    // <div className="envelope-container">
       <animated.div style={{transform: y.interpolate(y => `translateY(${ y}px`)}}>
           <div className="envelope" >
             <Paper isOpened={isOpened} setIsOpened={setIsOpened} lang={lang}/>
           </div>
       </animated.div>
-    </div>
+    // </div>
   )
 }
 
