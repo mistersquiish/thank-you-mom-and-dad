@@ -66,8 +66,13 @@ function Paper({isOpened, setIsOpened, lang}) {
     }
 
     // prevent dragging below envelope
-    if (y > 50) {
-      newYValue = 50;
+    if (y > (didSetDown ? 200 : 20)) {
+      newYValue = didSetDown ? 200 : 20;
+    }
+
+    // prevent dragging too far up
+    if (y < -200) {
+      newYValue = -200;
     }
 
     set({
@@ -125,7 +130,7 @@ function Envelope({lang}) {
 
 
   return (
-    <animated.div style={{transform: y.interpolate(y => `translateY(${ y}px`)}}>
+    <animated.div style={{transform: y.to(y => `translateY(${ y}px`)}}>
         <div className="envelope" >
           <div className="envelope-bottom" />
           <div className="envelope-lining" />

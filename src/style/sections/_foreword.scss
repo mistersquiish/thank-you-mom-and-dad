@@ -1,7 +1,6 @@
 #foreword {
   padding: 15rem 0 10rem 0;
-  height: 180vh;
-  margin-top: -15rem;
+  height: 110vh;
   margin-bottom: -1px;
   text-align: center;
 
@@ -25,7 +24,7 @@
     width: 510px;
 
     @include respond(phone) {
-      height: 228px;
+      height: 241px;
       width: 360px;
     }
   }

@@ -6,6 +6,7 @@
 
 module.exports = {
   /* Your site config here */
+  pathPrefix: "/thank-you-mom-and-dad",
   plugins: [
     `gatsby-plugin-sass`,
   ],

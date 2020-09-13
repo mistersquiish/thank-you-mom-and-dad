@@ -23,7 +23,7 @@ const Title = ({lang}) => {
   return (
     <section id="title">
       
-      <Container className="content-container">
+      <div className="content-container">
         <Header />
         
         <div className="envelope-container">
@@ -32,7 +32,7 @@ const Title = ({lang}) => {
           </Fade>
         </div>
 
-      </Container>
+      </div>
 
     </section>
   );
