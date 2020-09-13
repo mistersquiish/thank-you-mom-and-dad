@@ -6,6 +6,8 @@ import Dad from '../Helpers/Stories/Dad';
 import Mom from '../Helpers/Stories/Mom';
 import StoryCard from '../Helpers/StoryCard';
 import logo from '../../images/logoHeader.png'
+import arrow from '../../images/arrow.png'
+
 
 export const Parent = Object.freeze({"Mom":"mom", "Dad":"dad"});
 
@@ -74,42 +76,28 @@ const Story = (p) => {
   return (
     <section id="story">
       <Container>
-        <div className="story-wrapper">
-          <Fade bottom duration={1000} delay={300} distance="0px">
-            <h2 className="section-title">
-              {content.title[p.lang]}
-            </h2>
-          </Fade>
+        <Fade bottom duration={1000} delay={300} distance="0px">
+          <h2 className="section-title">
+            {content.title[p.lang]}
+          </h2>
+        </Fade>
+        <div className="story-card-container">
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-
+            
             <Row className="justify-content-center">
-                {/* <Button variant="light" style={momCardStyle} className="story-card" onClick={() => setParent(Parent.Mom)}>
-                  <Card>
-                    <Card.Img variant="top" src={logo} />
-                    <Card.Body>
-                      <Card.Title>{content.momLabel[p.lang]}</Card.Title>
-                    </Card.Body>
-                    
-                  </Card>
-                </Button>
+              <StoryCard style={momCardStyle} isMom={true} label={content.momLabel[p.lang]} onClick={() => setParent(Parent.Mom)} instructions={false}/>
+              <StoryCard style={dadCardStyle} isDad={true} label={content.dadLabel[p.lang]} onClick={() => setParent(Parent.Dad)} instructions={true}/>
               
-              <Button variant="light" style={dadCardStyle}className="story-card" onClick={() => setParent(Parent.Dad)}>
-                <Card>
-                  <Card.Img variant="top" src={logo} />
-                  <Card.Body>
-                    <Card.Title>{content.dadLabel[p.lang]}</Card.Title>
-                  </Card.Body>
-                </Card>
-              </Button> */}
-              <StoryCard style={momCardStyle} label={content.momLabel[p.lang]} onClick={() => setParent(Parent.Mom)}/>
-              <StoryCard style={dadCardStyle} label={content.dadLabel[p.lang]} onClick={() => setParent(Parent.Dad)}/>
-
+              
             </Row>
-
-            {/* Story */}
-            {currentStory()}
+            
           </Fade>
         </div>
+        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+          {/* Story */}
+          {currentStory()}
+        </Fade>
+
       </Container>
     </section>
   );

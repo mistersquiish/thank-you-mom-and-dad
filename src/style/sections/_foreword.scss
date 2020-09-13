@@ -1,17 +1,32 @@
 #foreword {
   padding: 15rem 0 10rem 0;
-  height: 100vh;
+  height: 180vh;
   margin-top: -15rem;
   margin-bottom: -1px;
+  text-align: center;
 
   @include respond(tab-land) {
     padding: 10rem 0;
     margin-top: 0;
   }
 
-  .foreword-wrapper {
-    text-align: center;
+  @include respond(phone) {
+    height: 140vh;
+  }
+
+  p {
+    font-size: $default-font-size;
     backface-visibility: hidden;
   }
 
+  #foreword-picture {
+    padding: 30px 15px;
+    height: 343px;
+    width: 510px;
+
+    @include respond(phone) {
+      height: 228px;
+      width: 360px;
+    }
+  }
 }

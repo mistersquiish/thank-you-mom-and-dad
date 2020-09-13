@@ -27,11 +27,9 @@ const Title = ({lang}) => {
         <Header />
         
         <div className="envelope-container">
-          {/* <div className="envelope-container"> */}
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
               <Envelop lang={lang}/>
           </Fade>
-          {/* </div> */}
         </div>
 
       </Container>

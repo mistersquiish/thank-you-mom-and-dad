@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useSpring, animated, interpolate } from 'react-spring';
 import { useDrag } from 'react-use-gesture';
 import { Language } from '../LanguageConstant';
+import arrow from '../../images/arrow.png'
 
 const content = {
   message: {},
@@ -39,16 +40,6 @@ function Paper({isOpened, setIsOpened, lang}) {
   const [didSetDown, setDidSetDown] = useState(false);
 
   const bind = useDrag(({ down, movement: [x, y] }) => {
-    // if (didSetDown === true) {
-    //   set({
-    //     x: down ? x : 0,
-    //     y: down ? y -200 : -200,
-    //     scale: down ? 1.1 : 1,
-    //     immediate: down
-    //   })
-    //   return;
-    // }
-
     // if envelop is already opened, don't move
     if (isOpened === true && !down) {
       set({
@@ -139,6 +130,11 @@ function Envelope({lang}) {
           <div className="envelope-bottom" />
           <div className="envelope-lining" />
           <div className="envelope-symbol" />
+          <div className="envelope-instructions">
+            <h5>pull</h5>
+            <img src={arrow} className="arrow" />
+          </div>
+          
           <Paper isOpened={isOpened} setIsOpened={setIsOpened} lang={lang}/>
         </div>
     </animated.div>

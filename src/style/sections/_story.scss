@@ -3,15 +3,20 @@
   height: 100vh;
   margin-top: -15rem;
   margin-bottom: -1px;
+  text-align: center;
+    backface-visibility: hidden;
 
   @include respond(tab-land) {
     padding: 10rem 0;
     margin-top: 0;
   }
 
-  .story-wrapper {
-    text-align: center;
-    backface-visibility: hidden;
+  .story-card-container {
+    position: relative;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
   }
 
   .story-card {
@@ -29,9 +34,6 @@
       width: 15rem;
     }
   }
-
-
-
   .story-card:hover {
     opacity: 1 !important;
   }

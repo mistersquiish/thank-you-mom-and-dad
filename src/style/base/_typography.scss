@@ -1,14 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 h1 {
   font-weight: 700;
   font-family: 'Nothing You Could Do', cursive;
 }
 
-p,
+h5 {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 200;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: $default-font-size;
+  font-weight: 200;
+}
 a {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: $default-font-size;
 }
 

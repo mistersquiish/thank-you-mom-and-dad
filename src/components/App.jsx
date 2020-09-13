@@ -68,10 +68,11 @@ class App extends React.Component {
     return (
       
       <React.Fragment>
+        {this.renderComponents(components, this.onLanguageChange)}
         <Title lang={this.state.lang}/>
         <Foreword lang={this.state.lang}/>
         <Story lang={this.state.lang}/>
-        {this.renderComponents(components, this.onLanguageChange)}
+        
       </React.Fragment>
       
     );

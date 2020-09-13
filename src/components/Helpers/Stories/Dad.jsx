@@ -4,16 +4,12 @@ import Fade from 'react-reveal/Fade';
 import { Language } from '../../LanguageConstant';
 
 const content = {
-  title: {},
-  message: {}
+  story: {}
 };
-content["title"][Language.English] = "Foreword";
-content["title"][Language.Spanish] = "Prefacio";
-content["title"][Language.Chinese] = "前言";
 
-content["message"][Language.English] = "A story about";
-content["message"][Language.Spanish] = "Una cuenta sobre";
-content["message"][Language.Chinese] = "关于一个故事";
+content["story"][Language.English] = "It was around the year 1959...";
+content["story"][Language.Spanish] = "Es el ano sobre 1959...";
+content["story"][Language.Chinese] = "关于一个故事...";
 
 const Dad = (p) => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -30,18 +26,14 @@ const Dad = (p) => {
   }, []);
 
   return (
-    <Container>
-      <div className="foreword-wrapper">
-        <Fade bottom duration={1000} delay={300} distance="0px">
-          <h2 className="section-title">
-            {content.title[p.lang]}
-          </h2>
-        </Fade>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-          {content.message[p.lang]}
-        </Fade>
-      </div>
-    </Container>
+    <section id="dad">
+      <Container>
+
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+            {content.story[p.lang]}
+          </Fade>
+      </Container>
+    </section>
   );
 };
 
