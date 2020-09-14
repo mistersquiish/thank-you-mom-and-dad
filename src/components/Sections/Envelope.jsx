@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useSpring, animated, interpolate } from 'react-spring';
+import Fade from 'react-reveal/Fade';
 import { useDrag } from 'react-use-gesture';
 import { Language } from '../LanguageConstant';
-import arrow from '../../images/arrow.png'
+import arrow from '../../images/arrow.png';
+import chineseCoin from '../../images/chinese-coin.jpg';
 
 const content = {
   message: {},
-  thankyou: {}
+  thankyou: {},
+  instructions: {},
 };
 content["message"][Language.English] = "To my incredible parents who overcame poverty, adversity, and uncertainty to give a better life for their children";
 content["message"][Language.Spanish] = "Para mis padres increibles quien superaban pobreza, adversidad y incertidumbre para les dan una vida mejor para a sus hijos";
@@ -16,21 +19,12 @@ content["thankyou"][Language.English] = "―Thank you";
 content["thankyou"][Language.Spanish] = "―Gracias mucho";
 content["thankyou"][Language.Chinese] = "―谢谢";
 
+content["instructions"][Language.English] = "pull";
+content["instructions"][Language.Spanish] = "hala";
+content["instructions"][Language.Chinese] = "拉"
+
 
 function Paper({isOpened, setIsOpened, lang}) {
-  const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
-  }, []);
-
   const [props, set] = useSpring(() => ({
     x: 0,
     y: 0,
@@ -54,7 +48,7 @@ function Paper({isOpened, setIsOpened, lang}) {
     var newYValue = y;
 
     // prevent dragging into the side of envelope
-    if (x > -100 && x < 100 && y > -34 && !didSetDown) {
+    if (x > -100 && x < 100 && y > -70 && !didSetDown) {
       newXValue = 0;
     }
 
@@ -71,8 +65,8 @@ function Paper({isOpened, setIsOpened, lang}) {
     }
 
     // prevent dragging too far up
-    if (y < -200) {
-      newYValue = -200;
+    if (y < (didSetDown ? -200 : -500)) {
+      newYValue = (didSetDown ? -200 : -500);
     }
 
     set({
@@ -97,11 +91,11 @@ function Paper({isOpened, setIsOpened, lang}) {
   const LetterContents = () => {
     if (isOpened && didSetDown) {
       return (
-        <h1 className='message-wrapper'>
+        <h2 className="message-wrapper noselect">
           {content.message[lang]}
           <br/>
           {content.thankyou[lang]}
-        </h1>
+        </h2>
       )
     } else {
       return <div>{undefined}</div>
@@ -118,8 +112,21 @@ function Paper({isOpened, setIsOpened, lang}) {
   )
 }
 
-function Envelope({lang}) {
+const Envelope = ({lang}) => {
+  const [isDesktop, setIsDesktop] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   const [isOpened, setIsOpened] = useState(false);
+
+
+  useEffect(() => {
+    if (window.innerWidth > 769) {
+      setIsDesktop(true);
+      setIsMobile(false);
+    } else {
+      setIsMobile(true);
+      setIsDesktop(false);
+    }
+  }, []);
 
   const {y} = useSpring({
     loop: { reverse: true},
@@ -127,22 +134,35 @@ function Envelope({lang}) {
     to: { y: isOpened ? 0 : -10 },
     config: { duration: 1000 } 
   })
-
+  console.log(y)
 
   return (
-    <animated.div style={{transform: y.to(y => `translateY(${ y}px`)}}>
-        <div className="envelope" >
-          <div className="envelope-bottom" />
-          <div className="envelope-lining" />
-          <div className="envelope-symbol" />
-          <div className="envelope-instructions">
-            <h5>pull</h5>
-            <img src={arrow} className="arrow" />
-          </div>
-          
-          <Paper isOpened={isOpened} setIsOpened={setIsOpened} lang={lang}/>
+    <section id="envelope">
+      <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+        <div className="envelope-separator noselect">
+          <img src={chineseCoin} className="chinese-coin"/>
+          <img src={chineseCoin} className="chinese-coin"/>
+          <img src={chineseCoin} className="chinese-coin"/>
         </div>
-    </animated.div>
+      </Fade>
+      <div className="envelope-container">
+        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+          
+          <animated.div style={{transform: y.to(y => `translateY(${ y}px`)}}>
+              <div className="envelope" >
+                <div className="envelope-bottom" />
+                <div className="envelope-lining" />
+                <div className="envelope-symbol" />
+                <div className="envelope-instructions noselect">
+                  <h5>{content.instructions[lang]}</h5>
+                  <img src={arrow} className="arrow" />
+                </div>
+                <Paper isOpened={isOpened} setIsOpened={setIsOpened} lang={lang}/>
+              </div>
+          </animated.div>
+        </Fade>
+      </div>
+    </section>
   )
 }
 

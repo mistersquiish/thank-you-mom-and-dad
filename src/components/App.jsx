@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Fab, Action } from 'react-tiny-fab';
 import Title from './Sections/Title';
+import Envelope from './Sections/Envelope';
 import Foreword from './Sections/Foreword';
 import Story from './Sections/Story';
 import 'react-tiny-fab/dist/styles.css';
@@ -70,6 +71,7 @@ class App extends React.Component {
       <React.Fragment>
         {this.renderComponents(components, this.onLanguageChange)}
         <Title lang={this.state.lang}/>
+        <Envelope lang={this.state.lang}/>
         <Foreword lang={this.state.lang}/>
         <Story lang={this.state.lang}/>
         

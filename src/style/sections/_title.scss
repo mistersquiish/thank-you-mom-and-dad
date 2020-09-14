@@ -6,15 +6,16 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-content: center;
+    text-align: center;
   }
 
   .header {
     background-color: $white-color;
     color: $dark-grey;
     display: relative;
-    margin-top: 0 auto;
+    margin-bottom: auto;
   
     @include respond(phone) {
       border: 0px;
@@ -48,149 +49,45 @@
     }
   }
 
-  .envelope-container {
-    margin-top: auto;
-    margin-bottom: 50px;
+  .title-container {
+    padding: 40px 10px 10px 10px;
+    margin-bottom: auto;
+  }
 
-    @include respond(phone) {
-      margin-bottom: 120px;
-    }
+  h1 {
+    font-size: $very-big-font-size;
+    font-weight: 700;
   }
   
-  .envelope {
-    position: relative;
-    margin: 50px auto 0;
-    width: 98px;
-    height: 66px;
-    background: #8A0100;
-    margin-top: auto;
-    touch-action: none;
-  }
-  .envelope:before,
-  .envelope:after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border: 0 solid transparent;
-    border-width: 33px 49px;
-  }
-  
-  .envelope:before {
-    border-bottom-color: #8A0100;
-    top: -99%;
-    width: 99px;
-    left: -1px;
-  }
-  .envelope:after {
-    border-right-color: #D00E0E;
-    border-left-color: #D00E0E;
-    border-bottom-color: #D00E0E;
-    top: 0;
-    transform: rotate(360deg);
-  }
-
-  .envelope-bottom {
-    position: absolute;
-    top: 65px;
-    width: 98px;
-    height: 50px;
-    background: #D00E0E;
-    border-radius: 0 0 5px 5px;
-    box-shadow: 0 3px 1px rgba(0,0,0,0.25);
-    z-index: 1;
-  }
-
-  .envelope-lining {
-    position: absolute;
-    top: 5px;
-    left: 6px;
-    width: 87px;
-    height: 105px;
-    background: transparent;
-    border-color: #FFCC00;
-    border-top-color: transparent;
-    border-style: solid;
-    border-width: 1px;
-    z-index: 1; 
-  }
-
-  .envelope-symbol {
-    position: absolute;
-    background-image: url("../images/red-envelope-symbol.png");
-    background-size: contain;
-    top: 45px;
-    left: 24.5px;
-    height: 50px;
-    width: 50px;
-    z-index: 2;
-  }
-
-  .envelope-instructions {
-    position: absolute;
+  .image-container {
+    padding: 30px 15px;
     display: flex;
-    flex-direction: column;
-    top: -45px;
-    left: 100px;
-    height: 50px;
-    width: 55px;
-    transform: 0 !important; 
-
-    h5 {
-      align-self: flex-end;
-    }
-
-    .arrow {
-      height: 40px;
-      width: 40px;
-      transform: rotate(25deg);
-    }
-  }
-  
-  .paper {
-    background-image: url("https://inspirationhut.net/wp-content/uploads/2014/09/craft-paper.jpg");
-    width: 450px;
-    height: 30vh;
-    margin: 0 auto;
-    border-radius: 5px;
-    position: absolute;
-    left: -177px;
-    top: -250px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     @include respond(phone) {
-      height: 200px;
-      width: 310px;
-      left: -105px;
-      top: -200px;
+      margin-bottom: 70px;
     }
-  }
-  .paper:before {
-    top: 14px; 
-    width: 31px;
-  }
-  .paper:after {
-    right: 12px;
-    top: 28px;
-    box-shadow:
-      0 8px 0 #e3f1fc,
-      0 16px 0 #e3f1fc,
-      0 24px 0 #e3f1fc,
-      0 40px 0 #e3f1fc;
-  } 
 
-  .paper:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+    p {
+      width: 600px;
+      font-size: 1.25rem;
+      text-align: end;
 
-  .message-wrapper {
-    text-align: center;
-    max-width: 50rem;
-    backface-visibility: hidden;
-    padding: 1rem;
-    margin: auto;
-    font-size: $default-font-size;
+      @include respond(phone) {
+        width: 360px;
+      }
+    }
+
+    #title-picture {
+      height: 339px;
+      width: 600px;
+  
+      @include respond(phone) {
+        height: 203px;
+        width: 360px;
+      }
+    }
   }
 }

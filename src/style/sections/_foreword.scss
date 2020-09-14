@@ -1,7 +1,6 @@
 #foreword {
-  padding: 15rem 0 10rem 0;
-  height: 110vh;
-  margin-bottom: -1px;
+  padding: 10vh 0 10vh 0;
+  height: 120vh;
   text-align: center;
 
   @include respond(tab-land) {
@@ -10,7 +9,7 @@
   }
 
   @include respond(phone) {
-    height: 140vh;
+    height: 145vh;
   }
 
   p {
@@ -18,14 +17,33 @@
     backface-visibility: hidden;
   }
 
-  #foreword-picture {
+  .image-container {
     padding: 30px 15px;
-    height: 343px;
-    width: 510px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-    @include respond(phone) {
-      height: 241px;
-      width: 360px;
+    p {
+      width: 495px;
+      font-size: 1.25rem;
+      text-align: end;
+
+      @include respond(phone) {
+        width: 345px;
+      }
+    }
+
+    #foreword-picture {
+      height: 313px;
+      width: 495px;
+  
+      @include respond(phone) {
+        height: 211px;
+        width: 345px;
+      }
     }
   }
+
+  
 }

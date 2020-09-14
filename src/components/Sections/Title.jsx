@@ -1,9 +1,21 @@
-import React, { useContext, useState, useEffect } from 'react';
-import { Container } from 'react-bootstrap';
+import React, { useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import Header from '../Helpers/Header';
-import Envelop from '../Helpers/Envelop';
+import { Language } from '../LanguageConstant';
+import titlePicture from '../../images/foreword-picture.jpg'
 
+const content = {
+  title: {},
+  pictureInfo: {},
+};
+
+content["title"][Language.English] = "Ma and Ba";
+content["title"][Language.Spanish] = "Ma y Ba";
+content["title"][Language.Chinese] = "妈 和 爸";
+
+content["pictureInfo"][Language.English] = "Ma and Ba (1929)";
+content["pictureInfo"][Language.Spanish] = "Ma y Ba (1929)";
+content["pictureInfo"][Language.Chinese] = "妈和爸 (1929)";
 
 const Title = ({lang}) => {
   
@@ -25,12 +37,15 @@ const Title = ({lang}) => {
       
       <div className="content-container">
         <Header />
-        
-        <div className="envelope-container">
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-              <Envelop lang={lang}/>
-          </Fade>
-        </div>
+        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+          <div className="title-container">
+            <h1>{content.title[lang]}</h1>
+            <div className="image-container">
+                <img id="title-picture" src={titlePicture}  alt={'title-picture'}/>
+                <p>{content.pictureInfo[lang]}</p>
+              </div>
+          </div>
+        </Fade>
 
       </div>
 

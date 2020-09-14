@@ -36,7 +36,7 @@ const selectedStyle = {
   opacity: 1
 }
 
-const Story = (p) => {
+const Story = ({lang}) => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [parent, setParent] = useState("");
@@ -61,16 +61,12 @@ const Story = (p) => {
 
   function currentStory() {
     if (parent == Parent.Dad) {
-      return <Dad lang={p.lang}/>;
+      return <Dad lang={lang}/>;
     } else if (parent == Parent.Mom) {
-      return <Mom lang={p.lang}/>;
+      return <Mom lang={lang}/>;
     } else {
       return <div>{undefined}</div>;
     }
-  }
-
-  function asdf() {
-    console.log("sdf")
   }
 
   return (
@@ -78,15 +74,15 @@ const Story = (p) => {
       <Container>
         <Fade bottom duration={1000} delay={300} distance="0px">
           <h2 className="section-title">
-            {content.title[p.lang]}
+            {content.title[lang]}
           </h2>
         </Fade>
         <div className="story-card-container">
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
             
             <Row className="justify-content-center">
-              <StoryCard style={momCardStyle} isMom={true} label={content.momLabel[p.lang]} onClick={() => setParent(Parent.Mom)} instructions={false}/>
-              <StoryCard style={dadCardStyle} isDad={true} label={content.dadLabel[p.lang]} onClick={() => setParent(Parent.Dad)} instructions={true}/>
+              <StoryCard style={momCardStyle} isMom={true} lang={lang} onClick={() => setParent(Parent.Mom)} instructions={false}/>
+              <StoryCard style={dadCardStyle} isDad={true} lang={lang} onClick={() => setParent(Parent.Dad)} instructions={true}/>
               
               
             </Row>
