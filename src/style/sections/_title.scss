@@ -90,4 +90,34 @@
       }
     }
   }
+
+  .definition-container {
+
+    .definition {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .audio-button {
+      background-color: white;
+      border: none;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+
+      display: flex;
+      align-content: flex-start;
+    }
+
+    .audio-button:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
+    .sound-icon {
+      height: 15px;
+      width: 15px;
+    }
+  }
 }

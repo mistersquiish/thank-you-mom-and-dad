@@ -134,7 +134,6 @@ const Envelope = ({lang}) => {
     to: { y: isOpened ? 0 : -10 },
     config: { duration: 1000 } 
   })
-  console.log(y)
 
   return (
     <section id="envelope">
