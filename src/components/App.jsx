@@ -62,6 +62,11 @@ class App extends React.Component {
       onClick={() => this.onLanguageChange(Language.Spanish)}>
         🇲🇽
       </Action>
+      <Action style={actionButtonStyles}
+      text="Vietnamese"
+      onClick={() => this.onLanguageChange(Language.Vietnamese)}>
+        🇻🇳
+      </Action>
     </Fab>
   ));
 

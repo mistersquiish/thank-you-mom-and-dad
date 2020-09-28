@@ -11,10 +11,12 @@ const content = {
 content["thankYou"][Language.English] = "Thank you for taking the time to read my parent's story.";
 content["thankYou"][Language.Spanish] = "__";
 content["thankYou"][Language.Chinese] = "__";
+content["thankYou"][Language.Vietnamese] = "...";
 
 content["pictureInfo"][Language.English] = "My sister's graduation (May, 2019)";
 content["pictureInfo"][Language.Spanish] = "__";
 content["pictureInfo"][Language.Chinese] = "__";
+content["pictureInfo"][Language.Vietnamese] = "...";
 
 const Closing = ({lang}) => {
   const [isDesktop, setIsDesktop] = useState(false);

@@ -17,18 +17,22 @@ const content = {
 content["title"][Language.English] = "Their Story";
 content["title"][Language.Spanish] = "Sus Cuenta";
 content["title"][Language.Chinese] = "前言";
+content["title"][Language.Vietnamese] = "...";
 
 content["momLabel"][Language.English] = "Mom";
 content["momLabel"][Language.Spanish] = "Mamá";
 content["momLabel"][Language.Chinese] = "妈妈";
+content["momLabel"][Language.Vietnamese] = "...";
 
 content["dadLabel"][Language.English] = "Dad";
 content["dadLabel"][Language.Spanish] = "Papá";
 content["dadLabel"][Language.Chinese] = "爸爸";
+content["dadLabel"][Language.Vietnamese] = "...";
 
 content["disclaimer"][Language.English] = "(Their stories are told are written from their perspective but have been recited back to my parents to ensure authenticity)";
 content["disclaimer"][Language.Spanish] = "__";
 content["disclaimer"][Language.Chinese] = "__";
+content["disclaimer"][Language.Vietnamese] = "...";
 
 const unselectedStyle = {
   opacity: .2,
@@ -91,12 +95,13 @@ const Story = ({lang}) => {
             
           </Fade>
         </div>
-        <div id="disclaimer-container">
-          <p>
-            <b>{content.disclaimer[lang]}</b>
-          </p>
-        </div>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+
+          <div id="disclaimer-container">
+            <p>
+              <b>{content.disclaimer[lang]}</b>
+            </p>
+          </div>
           {/* Story */}
           {currentStory()}
         </Fade>

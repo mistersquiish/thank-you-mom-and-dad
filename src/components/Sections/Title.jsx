@@ -18,18 +18,22 @@ const content = {
 content["title"][Language.English] = "Ma and De";
 content["title"][Language.Spanish] = "Ma y De";
 content["title"][Language.Chinese] = "妈 和 爸";
+content["title"][Language.Vietnamese] = "...";
 
 content["pictureInfo"][Language.English] = "Ma and De (1929)";
 content["pictureInfo"][Language.Spanish] = "Ma y De (1929)";
 content["pictureInfo"][Language.Chinese] = "妈和爸 (1929)";
+content["pictureInfo"][Language.Vietnamese] = "...";
 
 content["translationMa"][Language.English] = "mom; mother";
 content["translationMa"][Language.Spanish] = "mamá; madre";
 content["translationMa"][Language.Chinese] = "妈; 母亲";
+content["translationMa"][Language.Vietnamese] = "...";
 
 content["translationDe"][Language.English] = "dad; father";
 content["translationDe"][Language.Spanish] = "papá; padre";
 content["translationDe"][Language.Chinese] = "爸; 父亲";
+content["translationDe"][Language.Vietnamese] = "...";
 
 function Title({lang}) {
   

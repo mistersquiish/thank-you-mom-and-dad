@@ -15,18 +15,22 @@ const content = {
 content["definition"][Language.English] = "The red envelope is typically a monetary gift given during special occasions. This is my red envelope to my parents only it's filled with love instead of money.";
 content["definition"][Language.Spanish] = "__";
 content["definition"][Language.Chinese] = "___";
+content["definition"][Language.Vietnamese] = "___";
 
 content["message"][Language.English] = "To my incredible parents who overcame poverty, adversity, and uncertainty to give a better life for their children";
 content["message"][Language.Spanish] = "Para mis padres increibles quien superaban pobreza, adversidad y incertidumbre para les dan una vida mejor para a sus hijos";
 content["message"][Language.Chinese] = "对于那些克服贫困，逆境和不确定性为孩子们过上更好生活的不可思议的父母";
+content["message"][Language.Vietnamese] = "___";
 
 content["thankyou"][Language.English] = "―Thank you";
 content["thankyou"][Language.Spanish] = "―Gracias mucho";
 content["thankyou"][Language.Chinese] = "―谢谢";
+content["thankyou"][Language.Vietnamese] = "___";
 
 content["instructions"][Language.English] = "pull";
 content["instructions"][Language.Spanish] = "hala";
 content["instructions"][Language.Chinese] = "拉"
+content["instructions"][Language.Vietnamese] = "___";
 
 
 function Paper({isOpened, setIsOpened, lang}) {

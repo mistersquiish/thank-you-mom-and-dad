@@ -1,6 +1,6 @@
 #closing {
-  padding: 50vh 0 10vh 0;
-  height: 60vh;
+  margin: 0vh 0 15vh 0;
+  height: 50vh;
   text-align: center;
 
 
@@ -17,7 +17,7 @@
       text-align: end;
 
       @include respond(phone) {
-        width: 480px;
+        width: 360px;
       }
     }
 
@@ -26,8 +26,8 @@
       width: 600px;
   
       @include respond(phone) {
-        height: 320px;
-        width: 480px;
+        height: 240px;
+        width: 360px;
       }
     }
   }
