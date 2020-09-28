@@ -1,0 +1,36 @@
+#closing {
+  padding: 50vh 0 10vh 0;
+  height: 60vh;
+  text-align: center;
+
+
+  .image-container {
+    padding: 30px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+      width: 600px;
+      font-size: 1.25rem;
+      text-align: end;
+
+      @include respond(phone) {
+        width: 480px;
+      }
+    }
+
+    #closing-picture {
+      height: 400px;
+      width: 600px;
+  
+      @include respond(phone) {
+        height: 320px;
+        width: 480px;
+      }
+    }
+  }
+
+  
+}

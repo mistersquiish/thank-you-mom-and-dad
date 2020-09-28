@@ -5,16 +5,14 @@ import { Language } from '../LanguageConstant';
 import Dad from '../Helpers/Stories/Dad';
 import Mom from '../Helpers/Stories/Mom';
 import StoryCard from '../Helpers/StoryCard';
-import logo from '../../images/logoHeader.png'
-import arrow from '../../images/arrow.png'
-
 
 export const Parent = Object.freeze({"Mom":"mom", "Dad":"dad"});
 
 const content = {
   title: {},
   momLabel: {},
-  dadLabel: {}
+  dadLabel: {},
+  disclaimer: {},
 };
 content["title"][Language.English] = "Their Story";
 content["title"][Language.Spanish] = "Sus Cuenta";
@@ -27,6 +25,10 @@ content["momLabel"][Language.Chinese] = "妈妈";
 content["dadLabel"][Language.English] = "Dad";
 content["dadLabel"][Language.Spanish] = "Papá";
 content["dadLabel"][Language.Chinese] = "爸爸";
+
+content["disclaimer"][Language.English] = "(Their stories are told are written from their perspective but have been recited back to my parents to ensure authenticity)";
+content["disclaimer"][Language.Spanish] = "__";
+content["disclaimer"][Language.Chinese] = "__";
 
 const unselectedStyle = {
   opacity: .2,
@@ -88,6 +90,11 @@ const Story = ({lang}) => {
             </Row>
             
           </Fade>
+        </div>
+        <div id="disclaimer-container">
+          <p>
+            <b>{content.disclaimer[lang]}</b>
+          </p>
         </div>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           {/* Story */}

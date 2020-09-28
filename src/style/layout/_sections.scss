@@ -7,5 +7,10 @@ section {
       padding-left: 1rem;
       padding-right: 1rem;
     }
+
+    p {
+      font-size: $default-font-size;
+      backface-visibility: hidden;
+    }
   }
   

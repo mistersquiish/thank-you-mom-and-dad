@@ -1,16 +1,11 @@
 #mom {
   padding: 15rem 0 10rem 0;
-  height: 100vh;
+  height: 300vh;
   margin-bottom: -1px;
   text-align: center;
 
   @include respond(tab-land) {
     padding: 10rem 0;
     margin-top: 0;
-  }
-
-  p {
-    font-size: $default-font-size;
-    backface-visibility: hidden;
   }
 }

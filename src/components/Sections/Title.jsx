@@ -11,6 +11,8 @@ import maMp3 from '../../audio/ma.mp3';
 const content = {
   title: {},
   pictureInfo: {},
+  translationMa: {},
+  translationDe: {},
 };
 
 content["title"][Language.English] = "Ma and De";
@@ -21,7 +23,15 @@ content["pictureInfo"][Language.English] = "Ma and De (1929)";
 content["pictureInfo"][Language.Spanish] = "Ma y De (1929)";
 content["pictureInfo"][Language.Chinese] = "妈和爸 (1929)";
 
-function Title(lang) {
+content["translationMa"][Language.English] = "mom; mother";
+content["translationMa"][Language.Spanish] = "mamá; madre";
+content["translationMa"][Language.Chinese] = "妈; 母亲";
+
+content["translationDe"][Language.English] = "dad; father";
+content["translationDe"][Language.Spanish] = "papá; padre";
+content["translationDe"][Language.Chinese] = "爸; 父亲";
+
+function Title({lang}) {
   
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -36,9 +46,9 @@ function Title(lang) {
     }
   }, []);
 
-  const volume = .2
+  const volume = .1
   const [playMa] = useSound(maMp3, { volume: volume });
-  const [playDe] = useSound(deMp3, { volume: volume - .1 });
+  const [playDe] = useSound(deMp3, { volume: volume });
 
   return (
     <section id="title">
@@ -54,21 +64,27 @@ function Title(lang) {
               </div>
             <div className="definition-container">
               <div className="definition">
+                <p>
+                  Maa₁
+                </p>
                 <button className="audio-button" onClick={() => playMa()} >
                   <img src={soundIcon} className="sound-icon" />
                 </button>
 
                 <p>
-                  Maa₁ - mom; mother
+                   - {content.translationMa[lang]}
                 </p>
               </div>
 
               <div className="definition">
+                <p>
+                  De₁
+                </p>
                 <button className="audio-button" onClick={() => playDe()} >
                   <img src={soundIcon} className="sound-icon" />
                 </button>
                 <p>
-                  De₁ - dad; father
+                   - {content.translationDe[lang]}
                 </p>
               </div>
             </div>

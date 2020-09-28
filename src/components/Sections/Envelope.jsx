@@ -7,10 +7,15 @@ import arrow from '../../images/arrow.png';
 import chineseCoin from '../../images/chinese-coin.jpg';
 
 const content = {
+  definition: {},
   message: {},
   thankyou: {},
   instructions: {},
 };
+content["definition"][Language.English] = "The red envelope is typically a monetary gift given during special occasions. This is my red envelope to my parents only it's filled with love instead of money.";
+content["definition"][Language.Spanish] = "__";
+content["definition"][Language.Chinese] = "___";
+
 content["message"][Language.English] = "To my incredible parents who overcame poverty, adversity, and uncertainty to give a better life for their children";
 content["message"][Language.Spanish] = "Para mis padres increibles quien superaban pobreza, adversidad y incertidumbre para les dan una vida mejor para a sus hijos";
 content["message"][Language.Chinese] = "对于那些克服贫困，逆境和不确定性为孩子们过上更好生活的不可思议的父母";
@@ -144,6 +149,13 @@ const Envelope = ({lang}) => {
           <img src={chineseCoin} className="chinese-coin"/>
         </div>
       </Fade>
+      
+      <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+        <div className="envelope-definition-container">
+          <p>{content.definition[lang]}</p>
+        </div>
+      </Fade>
+
       <div className="envelope-container">
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           

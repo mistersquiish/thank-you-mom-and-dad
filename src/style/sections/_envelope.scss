@@ -1,5 +1,5 @@
 #envelope {
-  padding: 10vh 10vh;
+  padding: 10vh 0vh;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -21,6 +21,16 @@
 
   .envelope-container {
     margin-top: auto;
+  }
+
+  .envelope-definition-container {
+    margin: auto;
+    width: 40%;
+    text-align: center;
+
+    @include respond(phone) {
+      width: 80%;
+    }
   }
   
   .envelope {
@@ -135,6 +145,10 @@
 
     @media (max-height: 45em) {
       top: -150px;
+    }
+
+    @media (max-height: 35em) {
+      top: -100px;
     }
   }
   .paper:before {
