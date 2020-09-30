@@ -48,12 +48,7 @@ function StoryCard({onClick, style, instructions, isMom, isDad, lang}) {
           
           <button onClick={onClick}>
             <div className="card" style={style}>
-              
                 <img src={isMom ? storyCardMom : storyCardDad} />
-                {/* <p>
-                  {label}
-                </p> */}
-
             </div>
           </button>
           

@@ -77,17 +77,17 @@
       text-align: end;
 
       @include respond(phone) {
-        width: 360px;
+        width: 325px;
       }
     }
 
     #title-picture {
-      height: 339px;
+      height: 400px;
       width: 600px;
   
       @include respond(phone) {
-        height: 203px;
-        width: 360px;
+        height: 217px;
+        width: 325px;
       }
     }
   }

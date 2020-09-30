@@ -1,6 +1,6 @@
 #dad {
   padding: 15rem 0 10rem 0;
-  height: 750vh;
+  height: 950vh;
   margin-bottom: -1px;
   text-align: center;
 
@@ -10,6 +10,8 @@
   }
 
   @include respond(phone) {
-    height: 1150vh;
+    height: 1275vh;
   }
+
+  
 }

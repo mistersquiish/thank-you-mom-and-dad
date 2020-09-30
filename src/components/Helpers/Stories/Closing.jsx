@@ -2,12 +2,18 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Language } from '../../LanguageConstant';
-import closingPicture from '../../../images/closing-picture.png'
+import closingPicture from '../../../images/closing-picture.jpg'
 
 const content = {
+  title: {},
   thankYou: {},
   pictureInfo: {},
 };
+content["title"][Language.English] = "Closing";
+content["title"][Language.Spanish] = "__";
+content["title"][Language.Chinese] = "__";
+content["title"][Language.Vietnamese] = "...";
+
 content["thankYou"][Language.English] = "Thank you for taking the time to read my parent's story.";
 content["thankYou"][Language.Spanish] = "__";
 content["thankYou"][Language.Chinese] = "__";
@@ -35,6 +41,11 @@ const Closing = ({lang}) => {
   return (
     <section id="closing">
       <Container>
+          <Fade bottom duration={1000} delay={300} distance="0px">
+            <h2 className="section-title">
+              {content.title[lang]}
+            </h2>
+          </Fade>
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
             <p>
               {content.thankYou[lang]}

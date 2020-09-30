@@ -1,6 +1,6 @@
 #mom {
   padding: 15rem 0 10rem 0;
-  height: 350vh;
+  height: 650vh;
   margin-bottom: -1px;
   text-align: center;
 
@@ -10,6 +10,6 @@
   }
 
   @include respond(phone) {
-    height: 450vh;
+    height: 775vh;
   }
 }

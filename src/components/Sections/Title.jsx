@@ -3,7 +3,7 @@ import Fade from 'react-reveal/Fade';
 import useSound from 'use-sound';
 import Header from '../Helpers/Header';
 import { Language } from '../LanguageConstant';
-import titlePicture from '../../images/foreword-picture.jpg';
+import { pictures } from '../Pictures';
 import soundIcon from '../../images/sound-icon.png';
 import deMp3 from '../../audio/de.mp3';
 import maMp3 from '../../audio/ma.mp3';
@@ -19,11 +19,6 @@ content["title"][Language.English] = "Ma and De";
 content["title"][Language.Spanish] = "Ma y De";
 content["title"][Language.Chinese] = "妈 和 爸";
 content["title"][Language.Vietnamese] = "...";
-
-content["pictureInfo"][Language.English] = "Ma and De (1929)";
-content["pictureInfo"][Language.Spanish] = "Ma y De (1929)";
-content["pictureInfo"][Language.Chinese] = "妈和爸 (1929)";
-content["pictureInfo"][Language.Vietnamese] = "...";
 
 content["translationMa"][Language.English] = "mom; mother";
 content["translationMa"][Language.Spanish] = "mamá; madre";
@@ -63,8 +58,8 @@ function Title({lang}) {
           <div className="title-container">
             <h1>{content.title[lang]}</h1>
             <div className="image-container">
-                <img id="title-picture" src={titlePicture}  alt={'title-picture'}/>
-                <p>{content.pictureInfo[lang]}</p>
+                <img id="title-picture" src={pictures.titlePicture.img}  alt={'title-picture'}/>
+                <p>{pictures.titlePicture.caption[lang]}</p>
               </div>
             <div className="definition-container">
               <div className="definition">

@@ -5,6 +5,8 @@ import { Language } from '../LanguageConstant';
 import Dad from '../Helpers/Stories/Dad';
 import Mom from '../Helpers/Stories/Mom';
 import StoryCard from '../Helpers/StoryCard';
+import { picturesMom } from '../Pictures-Mom';
+import { picturesDad } from '../Pictures-Dad';
 
 export const Parent = Object.freeze({"Mom":"mom", "Dad":"dad"});
 
@@ -34,14 +36,6 @@ content["disclaimer"][Language.Spanish] = "__";
 content["disclaimer"][Language.Chinese] = "__";
 content["disclaimer"][Language.Vietnamese] = "...";
 
-const unselectedStyle = {
-  opacity: .2,
-}
-
-const selectedStyle = {
-  opacity: 1
-}
-
 const Story = ({lang}) => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -67,9 +61,9 @@ const Story = ({lang}) => {
 
   function currentStory() {
     if (parent == Parent.Dad) {
-      return <Dad lang={lang}/>;
+      return <Dad lang={lang} pictures={picturesDad}/>;
     } else if (parent == Parent.Mom) {
-      return <Mom lang={lang}/>;
+      return <Mom lang={lang} pictures={picturesMom}/>;
     } else {
       return <div>{undefined}</div>;
     }
