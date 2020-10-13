@@ -2,33 +2,31 @@ import React, { useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import useSound from 'use-sound';
 import Header from '../Helpers/Header';
-import { Language } from '../LanguageConstant';
 import { pictures } from '../Pictures';
 import soundIcon from '../../images/sound-icon.png';
 import deMp3 from '../../audio/de.mp3';
 import maMp3 from '../../audio/ma.mp3';
 
 const content = {
-  title: {},
-  pictureInfo: {},
-  translationMa: {},
-  translationDe: {},
+  title: {
+    en: "Ma and De (test13)",
+    zh: "妈 和 爸",
+    es: "Ma y De",
+    vi: "Ma và De", 
+  },
+  translationMa: {
+    en: "mom; mother",
+    zh: "妈; 母亲",
+    es: "mamá; madre",
+    vi: "mẹ", 
+  },
+  translationDe: {
+    en: "dad; father",
+    zh: "爸; 父亲",
+    es: "papá; padre",
+    vi: "cha", 
+  },
 };
-
-content["title"][Language.English] = "Ma and De";
-content["title"][Language.Spanish] = "Ma y De";
-content["title"][Language.Chinese] = "妈 和 爸";
-content["title"][Language.Vietnamese] = "...";
-
-content["translationMa"][Language.English] = "mom; mother";
-content["translationMa"][Language.Spanish] = "mamá; madre";
-content["translationMa"][Language.Chinese] = "妈; 母亲";
-content["translationMa"][Language.Vietnamese] = "...";
-
-content["translationDe"][Language.English] = "dad; father";
-content["translationDe"][Language.Spanish] = "papá; padre";
-content["translationDe"][Language.Chinese] = "爸; 父亲";
-content["translationDe"][Language.Vietnamese] = "...";
 
 function Title({lang}) {
   

@@ -12,7 +12,7 @@ const content = {
 };
 
 content["instructions"][Language.English] = "click";
-content["instructions"][Language.Spanish] = "haz click";
+content["instructions"][Language.Spanish] = "haga click";
 content["instructions"][Language.Chinese] = "点击"
 content["instructions"][Language.Vietnamese] = "...";
 

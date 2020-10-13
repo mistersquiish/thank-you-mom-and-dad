@@ -1,7 +1,6 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Container, Card, Row, Button } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
-import { Language } from '../LanguageConstant';
 import Dad from '../Helpers/Stories/Dad';
 import Mom from '../Helpers/Stories/Mom';
 import StoryCard from '../Helpers/StoryCard';
@@ -11,30 +10,31 @@ import { picturesDad } from '../Pictures-Dad';
 export const Parent = Object.freeze({"Mom":"mom", "Dad":"dad"});
 
 const content = {
-  title: {},
-  momLabel: {},
-  dadLabel: {},
-  disclaimer: {},
+  title: {
+    en: "Their Story",
+    zh: "前言",
+    es: "Su Historia",
+    vi: "Câu chuyện của họ", 
+  },
+  momLabel: {
+    en: "Mom",
+    zh: "妈妈",
+    es: "Mamá",
+    vi: "Mẹ", 
+  },
+  dadLabel: {
+    en: "Dad",
+    zh: "爸爸",
+    es: "Papá",
+    vi: "Cha", 
+  },
+  disclaimer: {
+    en: "(Their story is written by me but from their perspective. Their story has been recited back to them to ensure authenticity)",
+    zh: "",
+    es: "",
+    vi: "", 
+  },
 };
-content["title"][Language.English] = "Their Story";
-content["title"][Language.Spanish] = "Sus Cuenta";
-content["title"][Language.Chinese] = "前言";
-content["title"][Language.Vietnamese] = "...";
-
-content["momLabel"][Language.English] = "Mom";
-content["momLabel"][Language.Spanish] = "Mamá";
-content["momLabel"][Language.Chinese] = "妈妈";
-content["momLabel"][Language.Vietnamese] = "...";
-
-content["dadLabel"][Language.English] = "Dad";
-content["dadLabel"][Language.Spanish] = "Papá";
-content["dadLabel"][Language.Chinese] = "爸爸";
-content["dadLabel"][Language.Vietnamese] = "...";
-
-content["disclaimer"][Language.English] = "(Their stories are told are written from their perspective but have been recited back to my parents to ensure authenticity)";
-content["disclaimer"][Language.Spanish] = "__";
-content["disclaimer"][Language.Chinese] = "__";
-content["disclaimer"][Language.Vietnamese] = "...";
 
 const Story = ({lang}) => {
   const [isDesktop, setIsDesktop] = useState(false);

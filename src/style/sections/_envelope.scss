@@ -25,11 +25,11 @@
 
   .envelope-definition-container {
     margin: auto;
-    width: 40%;
+    width: 450px;
     text-align: center;
 
     @include respond(phone) {
-      width: 80%;
+      width: 310px;
     }
   }
   

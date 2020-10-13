@@ -18,6 +18,7 @@
     "bootstrap": "^4.5.0",
     "gatsby": "^2.24.50",
     "gatsby-cli": "^2.12.95",
+    "gatsby-plugin-react-helmet": "^3.3.14",
     "gatsby-plugin-sass": "^2.3.4",
     "node-sass": "^4.14.1",
     "react": "^16.12.0",

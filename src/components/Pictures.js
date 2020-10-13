@@ -1,5 +1,6 @@
 import titlePicture from '../images/title-picture.jpg';
 import forewordPicture from '../images/foreword-picture.jpg'
+import closingPicture from '../images/closing-picture.jpg'
 
 export const pictures = {
   titlePicture: {
@@ -19,5 +20,14 @@ export const pictures = {
       vi: "", 
     },
     img: forewordPicture
+  },
+  closingPicture: {
+    caption: {
+      en: "My sister's graduation (May, 2019)",
+      zh: "",
+      es: "",
+      vi: "",
+    },
+    img: closingPicture
   }
 }

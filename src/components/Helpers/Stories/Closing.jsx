@@ -2,27 +2,28 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Language } from '../../LanguageConstant';
-import closingPicture from '../../../images/closing-picture.jpg'
+import { pictures } from '../../Pictures';
 
 const content = {
-  title: {},
-  thankYou: {},
-  pictureInfo: {},
+  title: {
+    en: "Closing",
+    zh: "结论",
+    es: "Conclusión",
+    vi: "Phần kết luận", 
+  },
+  thankYou: {
+    en: "Thank you for taking the time to read my parent's story. Special thanks to these awesome people who helped.",
+    zh: "感谢您抽出宝贵的时间阅读我父母的故事.",
+    es: "Gracias por tomarse el tiempo de leer la historia de mis padres.",
+    vi: "Cảm ơn bạn đã dành thời gian đọc câu chuyện của bố mẹ tôi.", 
+  },
+  leo: {
+    en: "Leo G. —— Helped improve the writing style and structure.",
+    zh: "",
+    es: "",
+    vi: "",
+  },
 };
-content["title"][Language.English] = "Closing";
-content["title"][Language.Spanish] = "__";
-content["title"][Language.Chinese] = "__";
-content["title"][Language.Vietnamese] = "...";
-
-content["thankYou"][Language.English] = "Thank you for taking the time to read my parent's story.";
-content["thankYou"][Language.Spanish] = "__";
-content["thankYou"][Language.Chinese] = "__";
-content["thankYou"][Language.Vietnamese] = "...";
-
-content["pictureInfo"][Language.English] = "My sister's graduation (May, 2019)";
-content["pictureInfo"][Language.Spanish] = "__";
-content["pictureInfo"][Language.Chinese] = "__";
-content["pictureInfo"][Language.Vietnamese] = "...";
 
 const Closing = ({lang}) => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -50,9 +51,12 @@ const Closing = ({lang}) => {
             <p>
               {content.thankYou[lang]}
             </p>
+            <p>
+              {content.leo[lang]}
+            </p>
             <div className="image-container">
-              <img id="closing-picture" src={closingPicture}/>
-              <p>{content.pictureInfo[lang]}</p>
+              <img id="closing-picture" src={pictures.closingPicture.img}/>
+              <p>{pictures.closingPicture.caption[lang]}</p>
             </div>
             
             
