@@ -9,10 +9,10 @@ import maMp3 from '../../audio/ma.mp3';
 
 const content = {
   title: {
-    en: "Ma and De (test13)",
+    en: "Maa and De",
     zh: "妈 和 爸",
-    es: "Ma y De",
-    vi: "Ma và De", 
+    es: "Maa y De",
+    vi: "Maa và De", 
   },
   translationMa: {
     en: "mom; mother",

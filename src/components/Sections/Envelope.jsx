@@ -9,21 +9,21 @@ import chineseCoin from '../../images/chinese-coin.jpg';
 const content = {
   definition: {
     en: "The red envelope is typically a monetary gift given during special occasions. This is my red envelope to my parents only it's filled with love instead of money.",
-    zh: "",
-    es: "",
-    vi: "",
+    zh: "红包通常是特殊情况下给予的金钱礼物. 这是我给父母的红包，只有它充满了爱而不是金钱.",
+    es: "El sobre rojo suele ser un obsequio monetario que se da en ocasiones especiales. Este es mi sobre rojo para mis padres, solo que está lleno de amor en lugar de dinero.",
+    vi: "Phong bì đỏ thường là một món quà tiền tệ được tặng trong những dịp đặc biệt. Đây là phong bì đỏ mà tôi gửi cho bố mẹ, nó chứa đầy tình yêu thương thay vì tiền bạc.",
   },
   message: {
     en: "To my incredible parents who overcame poverty, adversity, and uncertainty to give a better life for their children",
-    zh: "",
+    zh: "对于那些克服贫困，逆境和不确定性为孩子们过上更好生活的不可思议的父母",
     es: "Para mis padres increibles quien superaban pobreza, adversidad y incertidumbre para les dan una vida mejor para a sus hijos",
-    vi: "",
+    vi: "Gửi đến những bậc cha mẹ đáng kinh ngạc của tôi, những người đã vượt qua nghèo khó, nghịch cảnh và bất trắc để mang lại cuộc sống tốt đẹp hơn cho con cái của họ",
   },
   thankyou: {
     en: "―Thank you",
     zh: "―谢谢",
     es: "―Gracias mucho",
-    vi: "",
+    vi: "―Cảm ơn bạn",
   },
   instructions: {
     en: "pull",

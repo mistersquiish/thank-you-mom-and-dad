@@ -17,9 +17,9 @@
   margin: 25px 0px;
 
   p {
-    width: 400px;
     font-size: 1.25rem;
-    text-align: end;
+    text-align: center;
+    width: 400px;
 
     @include respond(phone) {
       width: 300px;

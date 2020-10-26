@@ -30,9 +30,9 @@ const content = {
   },
   disclaimer: {
     en: "(Their story is written by me but from their perspective. Their story has been recited back to them to ensure authenticity)",
-    zh: "",
-    es: "",
-    vi: "", 
+    zh: "(他们的故事是我写的，但从他们的角度看. 为了确保真实性，他们的故事被引用给他们)",
+    es: "(Su historia está escrita por mí, pero desde su perspectiva. Su historia les ha sido recitada para asegurar su autenticidad)",
+    vi: "(Câu chuyện của họ do tôi viết nhưng dưới góc nhìn của họ. Câu chuyện của họ đã được kể lại cho họ để đảm bảo tính xác thực)", 
   },
 };
 

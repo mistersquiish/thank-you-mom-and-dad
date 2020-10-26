@@ -18,10 +18,22 @@ const content = {
     vi: "Cảm ơn bạn đã dành thời gian đọc câu chuyện của bố mẹ tôi.", 
   },
   leo: {
-    en: "Leo G. —— Helped improve the writing style and structure.",
-    zh: "",
-    es: "",
-    vi: "",
+    en: "Leo G. —— Helped improve the writing style and structure",
+    zh: "Leo G. —— 帮助改善了写作风格和结构",
+    es: "Leo G. —— Ayudó a mejorar el estilo y la estructura de la escritura",
+    vi: "Leo G. —— Giúp cải thiện cách viết và cấu trúc",
+  },
+  sister: {
+    en: "Jackie —— Being the best sister",
+    zh: "Jackie —— 做最好的妹妹",
+    es: "Jackie —— Siendo la mejor hermana",
+    vi: "Jackie —— Là người chị tốt nhất",
+  },
+  brother: {
+    en: "Raymond —— Being the best brother",
+    zh: "Raymond —— 做最好的兄弟",
+    es: "Raymond —— Siendo la mejor hermano",
+    vi: "Raymond —— Là người anh tốt nhất",
   },
 };
 
@@ -53,6 +65,12 @@ const Closing = ({lang}) => {
             </p>
             <p>
               {content.leo[lang]}
+            </p>
+            <p>
+              {content.sister[lang]}
+            </p>
+            <p>
+              {content.brother[lang]}
             </p>
             <div className="image-container">
               <img id="closing-picture" src={pictures.closingPicture.img}/>
