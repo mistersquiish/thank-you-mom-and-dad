@@ -36,17 +36,17 @@ export const picturesMom = {
   },
   momYoung: {
     caption: {
-      en: "Me in my middle school uniform (Jul 17, 1981)",
-      zh: "我穿着中学制服",
-      es: "Yo con mi uniforme de secundaria",
-      vi: "Tôi trong bộ đồng phục cấp hai của tôi", 
+      en: "Me in my elementary school uniform (Jul 17, 1981)",
+      zh: "我穿着我的小学制服（1981年7月17日）",
+      es: "Yo con mi uniforme de escuela primaria (17 de julio de 1981)",
+      vi: "Tôi trong bộ đồng phục học sinh tiểu học của tôi (ngày 17 tháng 7 năm 1981)", 
     },
     img: momYoung
   },
   uncle: {
     caption: {
       en: "Picture of my brother (passed away in 1990 at the young age of 13)",
-      zh: "我哥哥的照片 (1990年去世，享年13岁)",
+      zh: "我弟弟的照片 (1990年去世，享年13岁)",
       es: "Foto de mi hermano (falleció en 1990 a la temprana edad de 13 años)",
       vi: "Hình ảnh của anh trai tôi (qua đời năm 1990 ở tuổi 13)", 
     },
@@ -72,10 +72,10 @@ export const picturesMom = {
   },
   schoolPicture: {
     caption: {
-      en: "My middle school graduation (Jul 17, 1981)",
-      zh: "我中学毕业 (1981年7月17日)",
-      es: "Mi graduación de secundaria (17 de julio de 1981)",
-      vi: "Tốt nghiệp cấp hai của tôi (17 tháng 7 năm 1981)", 
+      en: "My elementary school graduation (Jul 17, 1981)",
+      zh: "我小学毕业（1981年7月17日）",
+      es: "Mi graduación de la escuela primaria (17 de julio de 1981)",
+      vi: "Tốt nghiệp tiểu học của tôi (ngày 17 tháng 7 năm 1981)", 
     },
     img: schoolPicture
   },
@@ -101,17 +101,17 @@ export const picturesMom = {
     caption: {
       en: "My husband and me in Hong Kong (1996)",
       zh: "我丈夫和我在香港 (1996)",
-      es: "Chồng tôi và tôi ở Hồng Kông (1996)",
-      vi: "Mi esposo y yo en Hong Kong (1996)", 
+      es: "Mi esposo y yo en Hong Kong (1996)",
+      vi: "Chồng tôi và tôi ở Hồng Kông (1996)", 
     },
     img: momDadHongKong
   },
   momDadEating: {
     caption: {
-      en: "My husband and me eating (Sept 18, 1996)",
-      zh: "我和我的丈夫吃饭（1996年9月18日)",
-      es: "Mi esposo y yo comiendo (18 de septiembre de 1996)",
-      vi: "Chồng tôi và tôi đi ăn (18 tháng 9 năm 1996)", 
+      en: "My husband and me eating in Hong Kong (Sept 18, 1996)",
+      zh: "我丈夫和我在香港吃饭（1996年9月18日）",
+      es: "Mi esposo y yo comiendo en Hong Kong (18 de septiembre de 1996)",
+      vi: "Chồng tôi và tôi đi ăn ở Hồng Kông (ngày 18 tháng 9 năm 1996)", 
     },
     img: momDadEating
   },

@@ -70,18 +70,18 @@ export const picturesDad = {
   brotherBoat: {
     caption: {
       en: "My younger brother holding our boat designation KG 0370 after landing at Pulau Bidong Island, Malaysia (May 11th, 1979)",
-      zh: "",
-      es: "",
-      vi: "", 
+      zh: "我的弟弟降落在马来西亚碧东岛后，拿着我们的船号KG 0370（1979年5月11日）",
+      es: "Mi hermano menor sostiene nuestro barco con la designación KG 0370 después de aterrizar en la isla Pulau Bidong, Malasia (11 de mayo de 1979)",
+      vi: "Em trai tôi cầm trên tay chiếc thuyền mang ký hiệu KG 0370 của chúng tôi sau khi cập bến đảo Pulau Bidong, Malaysia (ngày 11 tháng 5 năm 1979)", 
     },
     img: brotherBoat
   },
   familyBidong: {
     caption: {
       en: "My four sisters, two brothers, four nephews, my two brother-in-laws, my sister-in-law, and me on Pulau Bidong Island, Malaysia (May, 1979)",
-      zh: "",
-      es: "",
-      vi: "", 
+      zh: "我的四个姐妹，两个兄弟，四个侄子，我的两个姐夫，我的sister子以及我在马来西亚碧东岛上（1979年5月）",
+      es: "Mis cuatro hermanas, dos hermanos, cuatro sobrinos, mis dos cuñados, mi cuñada y yo en la isla Pulau Bidong, Malasia (mayo de 1979)",
+      vi: "Bốn chị gái, hai anh trai, bốn cháu trai, hai anh rể, chị dâu và tôi trên đảo Pulau Bidong, Malaysia (tháng 5 năm 1979)", 
     },
     img: familyBidong
   },
@@ -115,9 +115,9 @@ export const picturesDad = {
   friendlyPekingDuckLocation: {
     caption: {
       en: "The 2nd floor of my restaurant was the campaign headquarters for Michael Dukakis, govenor of Massachusetts (he said he would frame my restaurant picture if he won the presidency in 1988)",
-      zh: "",
-      es: "",
-      vi: "", 
+      zh: "我的餐厅的二楼是竞选总部的迈克尔·杜卡基斯，马萨诸塞州州长（他说他就要对我的餐厅照片，如果他在1988年赢得总统选举）",
+      es: "El segundo piso de mi restaurante era la sede de la campaña de Michael Dukakis, gobernador de Massachusetts (dijo que enmarcaría la foto de mi restaurante si ganaba la presidencia en 1988).",
+      vi: "Tầng 2 nhà hàng của tôi là trụ sở chiến dịch tranh cử của Michael Dukakis, thống đốc bang Massachusetts (ông ấy nói sẽ đóng khung ảnh nhà hàng của tôi nếu ông ấy đắc cử tổng thống năm 1988)", 
     },
     img: friendlyPekingDuckLocation
   },
@@ -142,7 +142,7 @@ export const picturesDad = {
   friendlyPekingDuckNewspaper1: {
     caption: {
       en: "Story by Steve Lopez of 'The Philadelophia Inquirer' on meeting me (Sept 21st, 1987)",
-      zh: "",
+      zh: "“费城问询者”的史蒂夫·洛佩兹（Steve Lopez）在遇见我时的故事（1987年9月21日）",
       es: "Cuento de Steve Lopez de 'The Philadelophia Inquirer' al conocerme (21 de septiembre de 1987)",
       vi: "Câu chuyện của Steve Lopez trong 'The Philadelophia Inquirer' khi gặp tôi (ngày 21 tháng 9 năm 1987)", 
     },
@@ -151,7 +151,7 @@ export const picturesDad = {
   friendlyPekingDuckNewspaper2: {
     caption: {
       en: "'Friendly Peking Duck' restaurant review by 'The Philadelophia Inquirer' (Aug 16, 1987)",
-      zh: "",
+      zh: "费城问询者（Philadelphia Inquirer）评介的“ Friendly Peking Duck”餐厅（1987年8月16日）",
       es: "Reseña del restaurante 'Friendly Peking Duck' por 'The Philadelophia Inquirer",
       vi: "Bài đánh giá về nhà hàng 'Vịt quay Bắc Kinh thân thiện' của 'The Philadelophia Inquirer'", 
     },
@@ -214,9 +214,9 @@ export const picturesDad = {
   crashPraying: {
     caption: {
       en: "My dad, sister, brother-in-law, family friend, and me at the crash site (1976)",
-      zh: "",
-      es: "",
-      vi: "", 
+      zh: "我的父亲，妹妹，姐夫，家人朋友和我在坠机现场（1976）",
+      es: "Mi papá, mi hermana, mi cuñado, un amigo de la familia y yo en el lugar del accidente (1976)",
+      vi: "Bố, chị gái, anh rể, bạn của gia đình và tôi tại hiện trường vụ tai nạn (1976)", 
     },
     img: crashPraying
   },

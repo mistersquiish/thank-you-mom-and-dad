@@ -25,16 +25,34 @@ const content = {
   },
   sister: {
     en: "Jackie —— Being the best sister",
-    zh: "Jackie —— 做最好的妹妹",
+    zh: "Jackie —— 做最好的姐姐",
     es: "Jackie —— Siendo la mejor hermana",
     vi: "Jackie —— Là người chị tốt nhất",
   },
   brother: {
     en: "Raymond —— Being the best brother",
-    zh: "Raymond —— 做最好的兄弟",
+    zh: "Raymond —— 做最好的小弟弟",
     es: "Raymond —— Siendo la mejor hermano",
     vi: "Raymond —— Là người anh tốt nhất",
   },
+  josephine: {
+    en: "Josephine —— Proofreading Vietnamese translation",
+    zh: "Josephine —— 校对越南语翻译",
+    es: "Josephine —— Revisión de la traducción al vietnamita",
+    vi: "Josephine —— Hiệu đính bản dịch tiếng Việt",
+  },
+  huang: {
+    en: "Dr. Huang —— Proofreading Chinese translation",
+    zh: "Dr. Huang —— 校对中文翻译",
+    es: "Dr. Huang —— Revisión de la traducción al china",
+    vi: "Dr. Huang —— Hiệu đính bản dịch tiếng Trung",
+  },
+  scott: {
+    en: "Scott T. —— Creating the logo",
+    zh: "Scott T. —— 创建徽标",
+    es: "Scott T. —— Creando el logo",
+    vi: "Scott T. —— Tạo logo",
+  }
 };
 
 const Closing = ({lang}) => {
@@ -65,6 +83,15 @@ const Closing = ({lang}) => {
             </p>
             <p>
               {content.leo[lang]}
+            </p>
+            <p>
+              {content.huang[lang]}
+            </p>
+            <p>
+              {content.josephine[lang]}
+            </p>
+            <p>
+              {content.scott[lang]}
             </p>
             <p>
               {content.sister[lang]}

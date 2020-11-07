@@ -55,13 +55,13 @@ class App extends React.Component {
       <Action style={actionButtonStyles}
         text="Chinese"
         onClick={() => this.onLanguageChange(Language.Chinese)}>
-        🇭🇰
+        🇨🇳 
       </Action>
-      <Action style={actionButtonStyles}
+      {/* <Action style={actionButtonStyles}
       text="Spanish"
       onClick={() => this.onLanguageChange(Language.Spanish)}>
         🇲🇽
-      </Action>
+      </Action> */}
       <Action style={actionButtonStyles}
       text="Vietnamese"
       onClick={() => this.onLanguageChange(Language.Vietnamese)}>
