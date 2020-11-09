@@ -7,7 +7,7 @@ const path = require('path')
 
 module.exports = {
   /* Your site config here */
-  pathPrefix: "/thank-you-mom-and-dad",
+  pathPrefix: `/thank-you-mom-and-dad`,
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
