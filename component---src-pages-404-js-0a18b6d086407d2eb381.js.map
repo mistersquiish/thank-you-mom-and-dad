@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/404.js"],"names":[],"mappings":"2FAAA,gCAEe,qBAEb,OACE,8DACkC","file":"component---src-pages-404-js-0a18b6d086407d2eb381.js","sourcesContent":["import React from 'react';\n\nexport default () => {\n\n  return (\n    <h1>\n      Sorry, this path does not exist{' '}\n    </h1>\n  );\n};\n"],"sourceRoot":""}
