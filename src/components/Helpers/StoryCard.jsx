@@ -43,7 +43,7 @@ function StoryCard({onClick, style, instructions, isMom, isDad, lang}) {
       <animated.div
         onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
         onMouseLeave={() => set({ xys: [0, 0, 1] })}
-        style={{ transform: props.xys.to(trans) }}
+        // style={{ transform: props.xys.to(trans) }}
       >
           
           <button onClick={onClick}>

@@ -163,7 +163,7 @@ const Envelope = ({lang}) => {
       <div className="envelope-container">
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           
-          <animated.div style={{transform: y.to(y => `translateY(${ y}px`)}}>
+          {/* <animated.div style={{transform: y.to(y => `translateY(${ y}px`)}}> */}
               <div className="envelope" >
                 <div className="envelope-bottom" />
                 <div className="envelope-lining" />
@@ -174,7 +174,7 @@ const Envelope = ({lang}) => {
                 </div>
                 <Paper isOpened={isOpened} setIsOpened={setIsOpened} lang={lang}/>
               </div>
-          </animated.div>
+          {/* </animated.div> */}
         </Fade>
       </div>
     </section>

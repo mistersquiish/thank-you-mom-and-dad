@@ -10,7 +10,7 @@ import Picture from '../Helpers/Picture';
 
 const content = {
   title: {
-    en: "Maa and De (test2)",
+    en: "Maa and De",
     zh: "妈 和 爸",
     es: "Maa y De",
     vi: "Maa và De", 
