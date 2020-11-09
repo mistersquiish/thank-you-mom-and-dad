@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { pictures } from '../Pictures';
+import Picture from '../Helpers/Picture';
 
 const content = {
   title: {
@@ -61,7 +62,9 @@ const Foreword = ({lang}) => {
                 {content.message3[lang]}
               </p>
               <div className="image-container">
-                <img id="foreword-picture" src={pictures.forewordPicture.img}/>
+                <div id="foreword-picture">
+                  <Picture picture={pictures.forewordPicture} />
+                </div>
                 <p>{pictures.forewordPicture.caption[lang]}</p>
               </div>
               

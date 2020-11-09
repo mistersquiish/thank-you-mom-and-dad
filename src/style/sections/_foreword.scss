@@ -35,11 +35,9 @@
     }
 
     #foreword-picture {
-      height: 313px;
       width: 495px;
   
       @include respond(phone) {
-        height: 211px;
         width: 345px;
       }
     }

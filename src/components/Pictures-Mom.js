@@ -1,20 +1,3 @@
-import titlePicture from '../images/title-picture.jpg';
-import forewordPicture from '../images/foreword-picture.jpg'
-import mapOfZhaoqing from '../images/map-of-Zhaoqing.png';
-import littleRedBook from '../images/little-red-book.png';
-import momYoung from '../images/mom-young.jpg';
-import uncle from '../images/uncle.jpg';
-import tiananmenSquare from '../images/tiananmen-square.jpg';
-import vancouver from '../images/vancouver.jpg';
-import schoolPicture from '../images/school-picture.jpg';
-import momCool from '../images/mom-cool.jpg';
-import momSunset from '../images/mom-sunset.jpg';
-import momDadHongKong from '../images/mom-dad-hong-kong.jpg';
-import momDadEating from '../images/mom-dad-eating.jpg';
-import momWork from '../images/mom-work.jpg';
-import momSitting from '../images/mom-sitting.jpg';
-import familyToystore from '../images/family-toystore.jpg';
-
 export const picturesMom = {
   mapOfZhaoqing: {
     caption: {
@@ -23,7 +6,8 @@ export const picturesMom = {
       es: "Mapa de Zhaoqing, China",
       vi: "Bản đồ của Zhaoqing, Trung Quốc", 
     },
-    img: mapOfZhaoqing
+    filename: "map-of-Zhaoqing.png",
+    alt: "Map of Zhaoqing",
   },
   littleRedBook: {
     caption: {
@@ -32,7 +16,8 @@ export const picturesMom = {
       es: "Infame 'Pequeño libro rojo'",
       vi: "'Cuốn sách nhỏ màu đỏ' khét tiếng", 
     },
-    img: littleRedBook
+    filename: "little-red-book.png",
+    alt: "littleRedBook",
   },
   momYoung: {
     caption: {
@@ -41,7 +26,8 @@ export const picturesMom = {
       es: "Yo con mi uniforme de escuela primaria (17 de julio de 1981)",
       vi: "Tôi trong bộ đồng phục học sinh tiểu học của tôi (ngày 17 tháng 7 năm 1981)", 
     },
-    img: momYoung
+    filename: "mom-young.jpg",
+    alt: "momYoung",
   },
   uncle: {
     caption: {
@@ -50,7 +36,8 @@ export const picturesMom = {
       es: "Foto de mi hermano (falleció en 1990 a la temprana edad de 13 años)",
       vi: "Hình ảnh của anh trai tôi (qua đời năm 1990 ở tuổi 13)", 
     },
-    img: uncle
+    filename: "uncle.jpg",
+    alt: "uncle",
   },
   tiananmenSquare: {
     caption: {
@@ -59,7 +46,8 @@ export const picturesMom = {
       es: "'Tank Man' tomado en la Plaza de Tiananmen (1989)",
       vi: "'Tank Man' chụp tại Quảng trường Thiên An Môn (1989)", 
     },
-    img: tiananmenSquare
+    filename: "tiananmen-square",
+    alt: "tiananmenSquare",
   },
   vancouver: {
     caption: {
@@ -68,7 +56,8 @@ export const picturesMom = {
       es: "Vancouver, Canadá (5 de mayo de 1993)",
       vi: "Vancouver, Canada (ngày 5 tháng 5 năm 1993)", 
     },
-    img: vancouver
+    filename: "vancouver.jpg",
+    alt: "vancouver",
   },
   schoolPicture: {
     caption: {
@@ -77,7 +66,8 @@ export const picturesMom = {
       es: "Mi graduación de la escuela primaria (17 de julio de 1981)",
       vi: "Tốt nghiệp tiểu học của tôi (ngày 17 tháng 7 năm 1981)", 
     },
-    img: schoolPicture
+    filename: "school-picture.jpg",
+    alt: "schoolPicture",
   },
   momCool: {
     caption: {
@@ -86,7 +76,8 @@ export const picturesMom = {
       es: "Yo fuera de la isla de Lantau, Hong Kong (1982)",
       vi: "Tôi bên ngoài Đảo Lantau, Hồng Kông (1982)", 
     },
-    img: momCool
+    filename: "mom-cool.jpg",
+    alt: "momCool",
   },
   momSunset: {
     caption: {
@@ -95,7 +86,8 @@ export const picturesMom = {
       es: "Yo fuera de la isla de Lantau, Hong Kong (24 de noviembre de 1984)",
       vi: "Tôi bên ngoài Đảo Lantau, Hồng Kông (24 tháng 11 năm 1984)", 
     },
-    img: momSunset
+    filename: "mom-sunset.jpg",
+    alt: "momSunset",
   },
   momDadHongKong: {
     caption: {
@@ -104,7 +96,8 @@ export const picturesMom = {
       es: "Mi esposo y yo en Hong Kong (1996)",
       vi: "Chồng tôi và tôi ở Hồng Kông (1996)", 
     },
-    img: momDadHongKong
+    filename: "mom-dad-hong-kong.jpg",
+    alt: "momDadHongKong",
   },
   momDadEating: {
     caption: {
@@ -113,7 +106,8 @@ export const picturesMom = {
       es: "Mi esposo y yo comiendo en Hong Kong (18 de septiembre de 1996)",
       vi: "Chồng tôi và tôi đi ăn ở Hồng Kông (ngày 18 tháng 9 năm 1996)", 
     },
-    img: momDadEating
+    filename: "mom-dad-eating.jpg",
+    alt: "momDadEating",
   },
   momWork: {
     caption: {
@@ -122,7 +116,8 @@ export const picturesMom = {
       es: "Yo en 'El Vette', donde trabajaba (1987)",
       vi: "Tôi ở 'El Vette', nơi tôi đã làm việc (1987)", 
     },
-    img: momWork
+    filename: "mom-work.jpg",
+    alt: "momWork",
   },
   momSitting: {
     caption: {
@@ -131,7 +126,8 @@ export const picturesMom = {
       es: "Yo durante un viaje de negocios en Dongguan (1988)",
       vi: "Tôi trong một chuyến công tác ở Đông Quan (1988)", 
     },
-    img: momSitting
+    filename: "mom-sitting.jpg",
+    alt: "momSitting",
   },
   familyToystore: {
     caption: {
@@ -140,6 +136,7 @@ export const picturesMom = {
       es: "Mi mamá, mi esposo, mi nuevo sobrino y yo en KV Toy Store (enero, 1996)",
       vi: "Mẹ tôi, chồng, chồng mới và tôi tại Cửa hàng đồ chơi KV (tháng 1 năm 1996)", 
     },
-    img: familyToystore
+    filename: "family-toystore.jpg",
+    alt: "familyToystore",
   },
 }

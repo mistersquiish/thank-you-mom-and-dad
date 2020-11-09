@@ -1,11 +1,11 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
-import { Container, Card, Row, Button } from 'react-bootstrap';
 import { useSpring, animated } from 'react-spring'
 import arrowDown from '../../images/arrow-down.png'
 import storyCardMom from '../../images/story-card-mom.jpg'
 import storyCardDad from '../../images/story-card-dad.jpg'
 import { Language } from '../LanguageConstant';
+import Picture from './Picture';
+import { pictures } from '../Pictures';
 
 const content = {
   instructions: {},
@@ -48,7 +48,9 @@ function StoryCard({onClick, style, instructions, isMom, isDad, lang}) {
           
           <button onClick={onClick}>
             <div className="card" style={style}>
-                <img src={isMom ? storyCardMom : storyCardDad} />
+              <div className='img-container'>
+                <Picture picture={isMom ? pictures.storyCardMom : pictures.storyCardDad} />
+              </div>
             </div>
           </button>
           

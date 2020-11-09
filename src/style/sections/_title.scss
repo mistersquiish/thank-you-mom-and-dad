@@ -48,6 +48,11 @@
       width: 15%;
       border-top: 1px solid rgba(0, 0, 0, .2);
     }
+
+    #logo-container {
+      width: 39px;
+      height: 65px;
+    }
   }
 
   .title-container {
@@ -82,11 +87,9 @@
     }
 
     #title-picture {
-      height: 400px;
       width: 600px;
   
       @include respond(phone) {
-        height: 217px;
         width: 325px;
       }
     }

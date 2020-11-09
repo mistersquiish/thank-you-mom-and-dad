@@ -1,7 +1,3 @@
-import titlePicture from '../images/title-picture.jpg';
-import forewordPicture from '../images/foreword-picture.jpg'
-import closingPicture from '../images/closing-picture.jpg'
-
 export const pictures = {
   titlePicture: {
     caption: {
@@ -10,7 +6,8 @@ export const pictures = {
       es: "'KOTO Sushi & Sea Bar' en Laredo, TX (octubre de 1999)",
       vi: "'KOTO Sushi & Sea Bar' ở Laredo, TX (tháng 10 năm 1999)", 
     },
-    img: titlePicture
+    filename: "title-picture.jpg",
+    alt: "Title Picture",
   },
   forewordPicture: {
     caption: {
@@ -19,7 +16,8 @@ export const pictures = {
       es: "Cerca del río Swan en Perth, Australia (septiembre de 1996)",
       vi: "Gần sông Swan ở Perth, Úc (tháng 9 năm 1996)", 
     },
-    img: forewordPicture
+    filename: "foreword-picture.jpg",
+    alt: "Foreword Picture",
   },
   closingPicture: {
     caption: {
@@ -28,6 +26,19 @@ export const pictures = {
       es: "Graduación de mi hermana (mayo de 2019)",
       vi: "Lễ tốt nghiệp của em gái tôi (tháng 5 năm 2019)",
     },
-    img: closingPicture
+    filename: "closing-picture.jpg",
+    alt: "Closing Picture",
+  },
+  logo: {
+    filename: "logo.png",
+    alt: "Logo",
+  },
+  storyCardDad: {
+    filename: "story-card-dad.jpg",
+    alt: "Story Card Dad",
+  },
+  storyCardMom: {
+    filename: "story-card-mom.jpg",
+    alt: "Story Card Mom",
   }
 }

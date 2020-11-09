@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Language } from '../../LanguageConstant';
 import { pictures } from '../../Pictures';
+import Picture from '../../Helpers/Picture';
 
 const content = {
   title: {
@@ -100,7 +101,9 @@ const Closing = ({lang}) => {
               {content.brother[lang]}
             </p>
             <div className="image-container">
-              <img id="closing-picture" src={pictures.closingPicture.img}/>
+              <div id="closing-picture">
+                <Picture picture={pictures.closingPicture} />
+              </div>
               <p>{pictures.closingPicture.caption[lang]}</p>
             </div>
             

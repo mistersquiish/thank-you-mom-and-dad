@@ -6,6 +6,7 @@ import Mom from '../Helpers/Stories/Mom';
 import StoryCard from '../Helpers/StoryCard';
 import { picturesMom } from '../Pictures-Mom';
 import { picturesDad } from '../Pictures-Dad';
+import Picture from '../Helpers/Picture';
 
 export const Parent = Object.freeze({"Mom":"mom", "Dad":"dad"});
 
@@ -96,7 +97,6 @@ const Story = ({lang}) => {
               <b>{content.disclaimer[lang]}</b>
             </p>
           </div>
-          {/* Story */}
           {currentStory()}
         </Fade>
 

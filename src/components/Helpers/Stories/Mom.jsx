@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Language } from '../../LanguageConstant';
 import Closing from './Closing';
+import Picture from './../Picture';
 
 const content = {
   intro: {
@@ -106,7 +107,9 @@ const Mom = ({lang, pictures}) => {
                   </p>
                 </div>
                 <div class="image-single-container">
-                  <img src={pictures.mapOfZhaoqing.img} className="img-large"/>
+                  <div class="img-large-container">
+                    <Picture picture={pictures.mapOfZhaoqing}/>
+                  </div>
                   <p>{pictures.mapOfZhaoqing.caption[lang]}</p>
                 </div>
 
@@ -117,12 +120,16 @@ const Mom = ({lang, pictures}) => {
                 </div>
                 <div class="image-double-container">
                   <div class="image-double-bottom">
-                    <img src={pictures.littleRedBook.img}/>
+                    <div class="img-container">
+                      <Picture picture={pictures.littleRedBook}/>
+                    </div>
                     <p>{pictures.littleRedBook.caption[lang]}</p>
                   </div>
                   <div class="image-double-top">
                     <p>{pictures.momYoung.caption[lang]}</p>
-                    <img src={pictures.momYoung.img}/>
+                    <div class="img-container">
+                      <Picture picture={pictures.momYoung}/>
+                    </div>
                   </div>
                 </div>
 
@@ -132,7 +139,9 @@ const Mom = ({lang, pictures}) => {
                   </p>
                 </div>
                 <div class="image-single-container">
-                  <img src={pictures.uncle.img} className="img-large"/>
+                  <div class="img-large-container">
+                    <Picture picture={pictures.uncle}/>
+                  </div>
                   <p>{pictures.uncle.caption[lang]}</p>
                 </div>
 
@@ -142,7 +151,9 @@ const Mom = ({lang, pictures}) => {
                   </p>
                 </div>
                 <div class="image-single-container">
-                  <img src={pictures.schoolPicture.img} className="img-mid"/>
+                  <div class="img-mid-container">
+                    <Picture picture={pictures.schoolPicture}/>
+                  </div>
                   <p>{pictures.schoolPicture.caption[lang]}</p>
                 </div>
 
@@ -152,7 +163,9 @@ const Mom = ({lang, pictures}) => {
                   </p>
                 </div>
                 <div class="image-single-container">
-                  <img src={pictures.momWork.img} className="img-mid"/>
+                  <div class="img-mid-container">
+                    <Picture picture={pictures.momWork}/>
+                  </div>
                   <p>{pictures.momWork.caption[lang]}</p>
                 </div>
 
@@ -162,7 +175,9 @@ const Mom = ({lang, pictures}) => {
                   </p>
                 </div>
                 <div class="image-single-container">
-                  <img src={pictures.momCool.img} className="img-mid"/>
+                  <div class="img-mid-container">
+                    <Picture picture={pictures.momCool}/>
+                  </div>
                   <p>{pictures.momCool.caption[lang]}</p>
                 </div>
 
@@ -172,7 +187,9 @@ const Mom = ({lang, pictures}) => {
                   </p>
                 </div>
                 <div class="image-single-container">
-                  <img src={pictures.tiananmenSquare.img} className="img-mid"/>
+                  <div class="img-mid-container">
+                    <Picture picture={pictures.tiananmenSquare}/>
+                  </div>
                   <p>{pictures.tiananmenSquare.caption[lang]}</p>
                 </div>
 
@@ -182,11 +199,15 @@ const Mom = ({lang, pictures}) => {
                   </p>
                 </div>
                 <div class="image-single-container">
-                  <img src={pictures.momSunset.img} className="img-mid"/>
+                  <div class="img-mid-container">
+                    <Picture picture={pictures.momSunset}/>
+                  </div>
                   <p>{pictures.momSunset.caption[lang]}</p>
                 </div>
                 <div class="image-single-container">
-                  <img src={pictures.momSitting.img} className="img-mid"/>
+                  <div class="img-mid-container">
+                    <Picture picture={pictures.momSitting}/>
+                  </div>
                   <p>{pictures.momSitting.caption[lang]}</p>
                 </div>
 
@@ -196,21 +217,29 @@ const Mom = ({lang, pictures}) => {
                   </p>
                 </div>
                 <div class="image-single-container">
-                  <img src={pictures.vancouver.img} className="img-mid"/>
+                  <div class="img-mid-container">
+                    <Picture picture={pictures.vancouver}/>
+                  </div>
                   <p>{pictures.vancouver.caption[lang]}</p>
                 </div>
                 <div class="image-double-container">
                   <div class="image-double-bottom">
-                    <img src={pictures.momDadEating.img}/>
+                    <div class="img-container">
+                      <Picture picture={pictures.momDadEating}/>
+                    </div>
                     <p>{pictures.momDadEating.caption[lang]}</p>
                   </div>
                   <div class="image-double-top">
                     <p>{pictures.momDadHongKong.caption[lang]}</p>
-                    <img src={pictures.momDadHongKong.img}/>
+                    <div class="img-container">
+                      <Picture picture={pictures.momDadHongKong}/>
+                    </div>
                   </div>
                 </div>
                 <div class="image-single-container">
-                  <img src={pictures.familyToystore.img} className="img-large"/>
+                  <div class="img-large-container">
+                    <Picture picture={pictures.familyToystore}/>
+                  </div>
                   <p>{pictures.familyToystore.caption[lang]}</p>
                 </div>
 

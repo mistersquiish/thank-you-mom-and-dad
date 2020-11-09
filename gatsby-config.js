@@ -3,13 +3,23 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
+const path = require('path')
 
 module.exports = {
   /* Your site config here */
   pathPrefix: "/thank-you-mom-and-dad",
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
   ],
   siteMetadata: {
     title: "Thanks Mom and Dad",

@@ -1,7 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
-import { Language } from '../../LanguageConstant';
+import Picture from '../Picture';
 import Closing from './Closing';
 import arrowDown from '../../../images/arrow-down.png'
 
@@ -150,12 +150,16 @@ const Dad = ({lang, pictures}) => {
 
               <div class="image-double-container">
                 <div class="image-double-bottom">
-                  <img src={pictures.mapOfSaigon.img}/>
+                  <div class="img-container">
+                    <Picture picture={pictures.mapOfSaigon}/>
+                  </div>
                   <p>{pictures.mapOfSaigon.caption[lang]}</p>
                 </div>
                 <div class="image-double-top">
                   <p>{pictures.grandmaGrandpa.caption[lang]}</p>
-                  <img src={pictures.grandmaGrandpa.img}/>
+                  <div class="img-container">
+                    <Picture picture={pictures.grandmaGrandpa}/>
+                  </div>
                 </div>
               </div>
 
@@ -166,7 +170,9 @@ const Dad = ({lang, pictures}) => {
               </div>
 
               <div class="image-single-container">
-                <img src={pictures.familyVietnam.img} className="img-large"/>
+                <div class="img-large-container">
+                  <Picture picture={pictures.familyVietnam}/>
+                </div>
                 <p>{pictures.familyVietnam.caption[lang]}</p>
               </div>
 
@@ -177,12 +183,16 @@ const Dad = ({lang, pictures}) => {
               </div>
 
               <div class="image-double-container">
-                 <div class="image-double-top">
+                <div class="image-double-top">
                   <p>{pictures.fragments.caption[lang]}</p>
-                  <img src={pictures.fragments.img}/>
+                  <div class="img-container">
+                    <Picture picture={pictures.fragments}/>
+                  </div>
                 </div>
                 <div class="image-double-bottom">
-                  <img src={pictures.dadVietnam.img}/>
+                  <div class="img-container">
+                    <Picture picture={pictures.dadVietnam}/>
+                  </div>
                   <p>{pictures.dadVietnam.caption[lang]}</p>
                 </div>
               </div>
@@ -194,7 +204,9 @@ const Dad = ({lang, pictures}) => {
               </div>
 
               <div class="image-single-container">
-                <img src={pictures.dadMalaysia.img} className="img-mid"/>
+                <div class="img-mid-container">
+                  <Picture picture={pictures.dadMalaysia}/>
+                </div>
                 <p>{pictures.dadMalaysia.caption[lang]}</p>
               </div>
 
@@ -206,12 +218,16 @@ const Dad = ({lang, pictures}) => {
 
               <div class="image-double-container">
                 <div class="image-double-bottom">
-                  <img src={pictures.boat.img}/>
+                  <div class="img-container">
+                    <Picture picture={pictures.boat}/>
+                  </div>
                   <p>{pictures.boat.caption[lang]}</p>
                 </div>
                 <div class="image-double-top">
                   <p>{pictures.immigrationMap.caption[lang]}</p>
-                  <img src={pictures.immigrationMap.img}/>
+                  <div class="img-container">
+                    <Picture picture={pictures.immigrationMap}/>
+                  </div>
                 </div>
               </div>
 
@@ -221,7 +237,9 @@ const Dad = ({lang, pictures}) => {
                 </p>
               </div>
               <div class="image-single-container">
-                <img src={pictures.brotherBoat.img} className="img-mid"/>
+                <div class="img-mid-container">
+                  <Picture picture={pictures.brotherBoat}/>
+                </div>
                 <p>{pictures.brotherBoat.caption[lang]}</p>
               </div>
 
@@ -231,7 +249,9 @@ const Dad = ({lang, pictures}) => {
                 </p>
               </div>
               <div class="image-single-container">
-                <img src={pictures.journey.img} className="img-mid"/>
+                <div class="img-mid-container">
+                  <Picture picture={pictures.journey}/>
+                </div>
                 <p>{pictures.journey.caption[lang]}</p>
               </div>
 
@@ -241,7 +261,9 @@ const Dad = ({lang, pictures}) => {
                 </p>
               </div>
               <div class="image-single-container">
-                <img src={pictures.familyBidong.img} className="img-large"/>
+                <div class="img-large-container">
+                  <Picture picture={pictures.familyBidong}/>
+                </div>
                 <p>{pictures.familyBidong.caption[lang]}</p>
               </div>
 
@@ -253,10 +275,14 @@ const Dad = ({lang, pictures}) => {
               <div class="image-double-container">
                 <div class="image-double-bottom">
                   <p>{pictures.bidong.caption[lang]}</p>
-                  <img src={pictures.bidong.img}/>
+                  <div class="img-container">
+                    <Picture picture={pictures.bidong}/>
+                  </div>
                 </div>
                 <div class="image-double-top">
-                  <img src={pictures.nephew.img}/>
+                  <div class="img-container">
+                    <Picture picture={pictures.nephew}/>
+                  </div>
                   <p>{pictures.nephew.caption[lang]}</p>
                 </div>
               </div>
@@ -267,7 +293,9 @@ const Dad = ({lang, pictures}) => {
                 </p>
               </div>
               <div class="image-single-container">
-                <img src={pictures.friendlyPekingDuck.img} className="img-large"/>
+                <div class="img-large-container">
+                  <Picture picture={pictures.friendlyPekingDuck}/>
+                </div>
                 <p>{pictures.friendlyPekingDuck.caption[lang]}</p>
               </div>
 
@@ -277,7 +305,9 @@ const Dad = ({lang, pictures}) => {
                 </p>
               </div>
               <div class="image-single-container">
-                <img src={pictures.friendlyPekingDuckLocation.img} className="img-mid"/>
+                <div class="img-mid-container">
+                  <Picture picture={pictures.friendlyPekingDuckLocation}/>
+                </div>
                 <p>{pictures.friendlyPekingDuckLocation.caption[lang]}</p>
               </div>
 
@@ -288,7 +318,11 @@ const Dad = ({lang, pictures}) => {
               </div>
               <div class="image-double-container" style={{marginTop: 50}}>
                 <div class="image-double-top">
-                  <a href="https://drive.google.com/file/d/1jgbeLzGvm91fD3SrMfRjHlVGyTbyhQz4/view?usp=sharing" target="_blank"><img src={pictures.friendlyPekingDuckNewspaper1.img}/></a>
+                  <a href="https://drive.google.com/file/d/1jgbeLzGvm91fD3SrMfRjHlVGyTbyhQz4/view?usp=sharing" target="_blank">
+                    <div class="img-container">
+                      <Picture picture={pictures.friendlyPekingDuckNewspaper1}/>
+                    </div>
+                  </a>
                   <p>{pictures.friendlyPekingDuckNewspaper1.caption[lang]}</p>
                 </div>
                 <div class="image-double-top">
@@ -296,7 +330,11 @@ const Dad = ({lang, pictures}) => {
                     <img src={arrowDown} className="arrow" />
                     <h5>{content.newspaperInstructions[lang]}</h5>
                   </div>
-                  <a href="https://drive.google.com/file/d/1vTRoXBKQsD2OtIkL1i_MDcO2eFSD3pIQ/view?usp=sharing" target="_blank"><img src={pictures.friendlyPekingDuckNewspaper2.img}/></a>
+                  <a href="https://drive.google.com/file/d/1vTRoXBKQsD2OtIkL1i_MDcO2eFSD3pIQ/view?usp=sharing" target="_blank">
+                    <div class="img-container">
+                      <Picture picture={pictures.friendlyPekingDuckNewspaper2}/>
+                    </div>
+                  </a>
                   <p>{pictures.friendlyPekingDuckNewspaper2.caption[lang]}</p>
                 </div>
               </div>
@@ -309,10 +347,14 @@ const Dad = ({lang, pictures}) => {
               <div class="image-double-container">
                 <div class="image-double-bottom">
                   <p>{pictures.crashNewspaper.caption[lang]}</p>
-                  <img src={pictures.crashNewspaper.img}/>
+                  <div class="img-container">
+                    <Picture picture={pictures.crashNewspaper}/>
+                  </div>
                 </div>
                 <div class="image-double-top">
-                  <img src={pictures.crashPraying.img}/>
+                  <div class="img-container">
+                    <Picture picture={pictures.crashPraying}/>
+                  </div>
                   <p>{pictures.crashPraying.caption[lang]}</p>
                 </div>
               </div>
@@ -324,12 +366,16 @@ const Dad = ({lang, pictures}) => {
               </div>
               <div class="image-double-container">
                 <div class="image-double-top">
-                  <img src={pictures.restaurantMenu.img}/>
+                  <div class="img-container">
+                    <Picture picture={pictures.restaurantMenu}/>
+                  </div>
                   <p>{pictures.restaurantMenu.caption[lang]}</p>
                 </div>
                 <div class="image-double-bottom">
                   <p>{pictures.restaurantLaredo.caption[lang]}</p>
-                  <img src={pictures.restaurantLaredo.img}/>
+                  <div class="img-container">
+                    <Picture picture={pictures.restaurantLaredo}/>
+                  </div>
                 </div>
               </div>
 
@@ -339,7 +385,15 @@ const Dad = ({lang, pictures}) => {
                 </p>
               </div>
               <div class="image-single-container">
-                <img src={pictures.dadToyStore.img} className="img-large"/>
+                <div class="img-large-container">
+                  <Picture picture={pictures.dadDuck}/>
+                </div>
+                <p>{pictures.dadDuck.caption[lang]}</p>
+              </div>
+              <div class="image-single-container">
+                <div class="img-large-container">
+                  <Picture picture={pictures.dadToyStore}/>
+                </div>
                 <p>{pictures.dadToyStore.caption[lang]}</p>
               </div>
 

@@ -26,8 +26,11 @@
     }
   }
 
-  .img-large {
+  img {
     border-radius: 10px;
+  }
+
+  .img-large-container {
     width: 400px;
   
     @include respond(phone) {
@@ -35,8 +38,7 @@
     }
   }
 
-  .img-mid {
-    border-radius: 10px;
+  .img-mid-container {
     width: 300px;
   
     @include respond(phone) {
@@ -64,8 +66,11 @@
 
   img {
     border-radius: 10px;
+  }
+
+  .img-container {
     width: 200px;
-  
+
     @include respond(phone) {
       width: 150px;
     }

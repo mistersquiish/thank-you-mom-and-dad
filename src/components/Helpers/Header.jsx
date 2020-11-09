@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import logo from '../../images/logoHeader.png'
+import { pictures } from '../Pictures';
+import Picture from './Picture';
 
 const Header = () => {
 
@@ -9,7 +10,9 @@ const Header = () => {
       <Container>
         <Row className="justify-content-center">
           <hr />
-          <img src={logo}  alt={'logo'}/>
+          <div id="logo-container">
+            <Picture picture={pictures.logo} />
+          </div>
           <hr />
         </Row>
         

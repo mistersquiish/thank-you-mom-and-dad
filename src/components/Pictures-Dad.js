@@ -1,26 +1,3 @@
-import grandmaGrandpa from '../images/grandma-grandpa.jpg';
-import mapOfSaigon from '../images/map-of-Saigon.png';
-import fragments from '../images/fragments.jpg';
-import boat from '../images/boat.jpg';
-import immigrationMap from '../images/immigration-map.png';
-import brotherBoat from '../images/brother-boat.jpg';
-import familyBidong from '../images/family-bidong.jpg'
-import bidong from '../images/bidong.jpg';
-import nephew from '../images/nephew.jpg';
-import friendlyPekingDuck from '../images/friendly-peking-duck.jpg';
-import friendlyPekingDuckLocation from '../images/friendly-peking-duck-location.png';
-import restaurantMenu from '../images/restaurant-menu.png';
-import restaurantLaredo from '../images/restaurant-laredo.jpg';
-import friendlyPekingDuckNewspaper1 from '../images/friendly-peking-duck-newspaper-1.png';
-import friendlyPekingDuckNewspaper2 from '../images/friendly-peking-duck-newspaper-2.png';
-import dadToyStore from '../images/dad-toy-store.jpg';
-import journey from '../images/journey.png';
-import crashNewspaper from '../images/crash-newspaper.png';
-import familyVietnam from '../images/family-vietnam.jpg';
-import dadVietnam from '../images/dad-vietnam.jpg';
-import dadMalaysia from '../images/dad-malaysia.jpg';
-import crashPraying from '../images/crash-praying.jpg';
-
 export const picturesDad = {
   grandmaGrandpa: {
     caption: {
@@ -29,7 +6,8 @@ export const picturesDad = {
       es: "Mi madre y mi padre en Vietnam (1980)",
       vi: "Mẹ và cha tôi ở Việt Nam (1980)", 
     },
-    img: grandmaGrandpa
+    filename: "grandma-grandpa.jpg",
+    alt: "Picture of my mom and dad",
   },
   mapOfSaigon: {
     caption: {
@@ -38,7 +16,8 @@ export const picturesDad = {
       es: "Mapa de Saigon Vietnam (ahora Ho Chi Minh City)",
       vi: "Bản đồ Sài Gòn, Việt Nam (nay là Thành phố Hồ Chí Minh)", 
     },
-    img: mapOfSaigon
+    filename: "map-of-Saigon.png",
+    alt: "Map of Saigon",
   },
   fragments: {
     caption: {
@@ -47,7 +26,8 @@ export const picturesDad = {
       es: "Fragmento de granada todavía alojado en mi nudillo",
       vi: "Mảnh lựu đạn vẫn nằm trong khớp ngón tay của tôi", 
     },
-    img: fragments
+    filename: "fragments.jpg",
+    alt: "Bullet fragments",
   },
   boat: {
     caption: {
@@ -56,7 +36,8 @@ export const picturesDad = {
       es: "Un barco similar al que solíamos usar mi familia y yo para escapar de Vietnam",
       vi: "Một con thuyền giống với những gì gia đình tôi và tôi đã sử dụng để thoát khỏi Việt Nam", 
     },
-    img: boat
+    filename: "boat.jpg",
+    alt: "Boat",
   },
   immigrationMap: {
     caption: {
@@ -65,7 +46,8 @@ export const picturesDad = {
       es: "Países de manicomios",
       vi: "Các quốc gia tị nạn", 
     },
-    img: immigrationMap
+    filename: "immigration-map.jpg",
+    alt: "Map of countries",
   },
   brotherBoat: {
     caption: {
@@ -74,7 +56,8 @@ export const picturesDad = {
       es: "Mi hermano menor sostiene nuestro barco con la designación KG 0370 después de aterrizar en la isla Pulau Bidong, Malasia (11 de mayo de 1979)",
       vi: "Em trai tôi cầm trên tay chiếc thuyền mang ký hiệu KG 0370 của chúng tôi sau khi cập bến đảo Pulau Bidong, Malaysia (ngày 11 tháng 5 năm 1979)", 
     },
-    img: brotherBoat
+    filename: "brother-boat.jpg",
+    alt: "My younger brother holding our boat designation",
   },
   familyBidong: {
     caption: {
@@ -83,7 +66,8 @@ export const picturesDad = {
       es: "Mis cuatro hermanas, dos hermanos, cuatro sobrinos, mis dos cuñados, mi cuñada y yo en la isla Pulau Bidong, Malasia (mayo de 1979)",
       vi: "Bốn chị gái, hai anh trai, bốn cháu trai, hai anh rể, chị dâu và tôi trên đảo Pulau Bidong, Malaysia (tháng 5 năm 1979)", 
     },
-    img: familyBidong
+    filename: "family-bidong.jpg",
+    alt: "My family in Pulau Bidong Island",
   },
   bidong: {
     caption: {
@@ -92,7 +76,8 @@ export const picturesDad = {
       es: "Isla Pulau Bidong, Malasia (alrededor de 1977)",
       vi: "Đảo Pulau Bidong, Malaysia (khoảng năm 1977)", 
     },
-    img: bidong
+    filename: "bidong.jpg",
+    alt: "Bidong Island",
   },
   nephew: {
     caption: {
@@ -101,7 +86,8 @@ export const picturesDad = {
       es: "Mis dos sobrinos que emigraron a Suiza (1980)",
       vi: "Hai cháu trai của tôi di cư đến Thụy Sĩ (1980)", 
     },
-    img: nephew
+    filename: "nephew.jpg",
+    alt: "My two nephews",
   },
   friendlyPekingDuck: {
     caption: {
@@ -110,7 +96,8 @@ export const picturesDad = {
       es: "Mis tres socios de restaurante, trabajadores y yo en el restaurante 'Friendly Peking Duck' (1988)",
       vi: "Ba đối tác nhà hàng, công nhân và tôi tại nhà hàng 'Vịt quay Bắc Kinh thân thiện' (1988)", 
     },
-    img: friendlyPekingDuck
+    filename: "friendly-peking-duck.jpg",
+    alt: "Friendly Peking Duck restaurant",
   },
   friendlyPekingDuckLocation: {
     caption: {
@@ -119,7 +106,8 @@ export const picturesDad = {
       es: "El segundo piso de mi restaurante era la sede de la campaña de Michael Dukakis, gobernador de Massachusetts (dijo que enmarcaría la foto de mi restaurante si ganaba la presidencia en 1988).",
       vi: "Tầng 2 nhà hàng của tôi là trụ sở chiến dịch tranh cử của Michael Dukakis, thống đốc bang Massachusetts (ông ấy nói sẽ đóng khung ảnh nhà hàng của tôi nếu ông ấy đắc cử tổng thống năm 1988)", 
     },
-    img: friendlyPekingDuckLocation
+    filename: "friendly-peking-duck-location.jpg",
+    alt: "Friendly Peking Duck restaurant location",
   },
   restaurantMenu: {
     caption: {
@@ -128,7 +116,8 @@ export const picturesDad = {
       es: "Menú de mi 'Restaurante Vietnam' en Laredo, TX (1997-1998)",
       vi: "Thực đơn của 'Nhà hàng Việt Nam' của tôi ở Laredo, TX (1997-1998)", 
     },
-    img: restaurantMenu
+    filename: "restaurant-menu.png",
+    alt: "Restaurant menu",
   },
   restaurantLaredo: {
     caption: {
@@ -137,7 +126,8 @@ export const picturesDad = {
       es: "Mi chef ejecutivo, gerente de recepción, camarero y yo en 'Vietnam Restaurant' en Laredo, TX (Agosto, 1998)",
       vi: "Bếp trưởng điều hành, quản lý tiền sảnh, bồi bàn và tôi tại 'Nhà hàng Việt Nam' ở Laredo, TX (Tháng 8 năm 1998)        ", 
     },
-    img: restaurantLaredo
+    filename: "restaurant-laredo.jpg",
+    alt: "Restaurant Laredo",
   },
   friendlyPekingDuckNewspaper1: {
     caption: {
@@ -146,7 +136,8 @@ export const picturesDad = {
       es: "Cuento de Steve Lopez de 'The Philadelophia Inquirer' al conocerme (21 de septiembre de 1987)",
       vi: "Câu chuyện của Steve Lopez trong 'The Philadelophia Inquirer' khi gặp tôi (ngày 21 tháng 9 năm 1987)", 
     },
-    img: friendlyPekingDuckNewspaper1
+    filename: "friendly-peking-duck-newspaper-1.jpg",
+    alt: "Friendly Pekking Duck newspaper 1",
   },
   friendlyPekingDuckNewspaper2: {
     caption: {
@@ -155,7 +146,8 @@ export const picturesDad = {
       es: "Reseña del restaurante 'Friendly Peking Duck' por 'The Philadelophia Inquirer",
       vi: "Bài đánh giá về nhà hàng 'Vịt quay Bắc Kinh thân thiện' của 'The Philadelophia Inquirer'", 
     },
-    img: friendlyPekingDuckNewspaper2
+    filename: "friendly-peking-duck-newspaper-2.jpg",
+    alt: "Friendly Pekking Duck newspaper 2",
   },
   dadToyStore: {
     caption: {
@@ -164,7 +156,8 @@ export const picturesDad = {
       es: "Yo en mi juguetería, KV Toys (1994)",
       vi: "Tôi tại cửa hàng đồ chơi của tôi, KV Toys (1994)", 
     },
-    img: dadToyStore
+    filename: "dad-toy-store.jpg",
+    alt: "Dad Toy Store",
   },
   journey: {
     caption: {
@@ -173,7 +166,8 @@ export const picturesDad = {
       es: "Viaje desde Rạch Giá a la isla Pulau Bidong",
       vi: "Hành trình từ Rạch Giá đến Đảo Pulau Bidong", 
     },
-    img: journey
+    filename: "journey.png",
+    alt: "Journey",
   },
   crashNewspaper: {
     caption: {
@@ -182,7 +176,8 @@ export const picturesDad = {
       es: "Periódico del accidente de mi hermano menor en el vuelo 2574 (11 de septiembre de 1991)",
       vi: "Báo chí về vụ tai nạn của em trai tôi trên chuyến bay 2574 (11 tháng 9 năm 1991)", 
     },
-    img: crashNewspaper
+    filename: "crash-newspaper.png",
+    alt: "Crash Newspaper",
   },
   familyVietnam: {
     caption: {
@@ -191,7 +186,8 @@ export const picturesDad = {
       es: "Mis dos hermanas, hermano, papá y yo justo antes de pagar $ 2,500 por un lugar en un bote de escape (11 de septiembre de 1979)",
       vi: "Hai chị gái, anh trai, bố và tôi ngay trước khi trả 2.500 đô la cho một chỗ trên thuyền thoát hiểm (11 tháng 9 năm 1979)", 
     },
-    img: familyVietnam
+    filename: "family-vietnam.jpg",
+    alt: "Family Vietnam Picture",
   },
   dadVietnam: {
     caption: {
@@ -200,7 +196,8 @@ export const picturesDad = {
       es: "Yo afuera de un zoológico en Vietnam (1976)",
       vi: "Tôi bên ngoài vườn thú ở Việt Nam (1976)", 
     },
-    img: dadVietnam
+    filename: "dad-vietnam.jpg",
+    alt: "Dad Vietnam",
   },
   dadMalaysia: {
     caption: {
@@ -209,15 +206,27 @@ export const picturesDad = {
       es: "Yo camino a América (1980)",
       vi: "Tôi trên đường đến Mỹ (1980)", 
     },
-    img: dadMalaysia
+    filename: "dad-malaysia.jpg",
+    alt: "Dad Malaysia",
   },
   crashPraying: {
     caption: {
-      en: "My dad, sister, brother-in-law, family friend, and me at the crash site (1976)",
-      zh: "我的父亲，妹妹，姐夫，家人朋友和我在坠机现场（1976）",
-      es: "Mi papá, mi hermana, mi cuñado, un amigo de la familia y yo en el lugar del accidente (1976)",
-      vi: "Bố, chị gái, anh rể, bạn của gia đình và tôi tại hiện trường vụ tai nạn (1976)", 
+      en: "My dad, sister, brother-in-law, family friend, and me at the crash site (1991)",
+      zh: "我的父亲，妹妹，姐夫，家人朋友和我在坠机现场（1991）",
+      es: "Mi papá, mi hermana, mi cuñado, un amigo de la familia y yo en el lugar del accidente (1991)",
+      vi: "Bố, chị gái, anh rể, bạn của gia đình và tôi tại hiện trường vụ tai nạn (1991)", 
     },
-    img: crashPraying
+    filename: "crash-praying.jpg",
+    alt: "Crash Praying",
   },
+  dadDuck: {
+    caption: {
+      en: "Me at 'Friendly Peking Duck' restaurant (1988)",
+      zh: "我在“北京烤鸭”餐厅 (1988）",
+      es: "Yo en el restaurante 'Friendly Peking Duck' (1988)",
+      vi: "Tôi ở nhà hàng 'Vịt quay Bắc Kinh thân thiện' (1988)", 
+    },
+    filename: "dad-duck.jpg",
+    alt: "Dad Duck",
+  }
 }

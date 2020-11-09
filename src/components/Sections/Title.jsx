@@ -6,6 +6,7 @@ import { pictures } from '../Pictures';
 import soundIcon from '../../images/sound-icon.png';
 import deMp3 from '../../audio/de.mp3';
 import maMp3 from '../../audio/ma.mp3';
+import Picture from '../Helpers/Picture';
 
 const content = {
   title: {
@@ -56,7 +57,9 @@ function Title({lang}) {
           <div className="title-container">
             <h1>{content.title[lang]}</h1>
             <div className="image-container">
-                <img id="title-picture" src={pictures.titlePicture.img}  alt={'title-picture'}/>
+                <div id="title-picture">
+                  <Picture picture={pictures.titlePicture} />
+                </div>
                 <p>{pictures.titlePicture.caption[lang]}</p>
               </div>
             <div className="definition-container">

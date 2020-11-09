@@ -35,20 +35,12 @@
     }
 
     img {
+      border-radius: 5px;
+    }
+
+    .img-container {
       width: 100%;
       height: 100%;
-      border-radius: 5px;
-
-      // @include respond(tab-land) {
-      //   width: 15rem;
-      //   height: 15rem;
-      // }
-    
-      // @include respond(tab-port) {
-      //   width: 8rem;
-      //   height: 8rem;
-      // }
-  
     }
   }
 
