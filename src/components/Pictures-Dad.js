@@ -106,7 +106,7 @@ export const picturesDad = {
       es: "El segundo piso de mi restaurante era la sede de la campaña de Michael Dukakis, gobernador de Massachusetts (dijo que enmarcaría la foto de mi restaurante si ganaba la presidencia en 1988).",
       vi: "Tầng 2 nhà hàng của tôi là trụ sở chiến dịch tranh cử của Michael Dukakis, thống đốc bang Massachusetts (ông ấy nói sẽ đóng khung ảnh nhà hàng của tôi nếu ông ấy đắc cử tổng thống năm 1988)", 
     },
-    filename: "friendly-peking-duck-location.jpg",
+    filename: "friendly-peking-duck-location.png",
     alt: "Friendly Peking Duck restaurant location",
   },
   restaurantMenu: {

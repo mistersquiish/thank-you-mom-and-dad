@@ -20,6 +20,14 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-106141735-2",
+        head: true,
+        anonymize: true,
+      },
+    },
   ],
   siteMetadata: {
     title: "Thanks Mom and Dad",
