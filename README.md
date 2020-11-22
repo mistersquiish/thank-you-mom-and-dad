@@ -4,7 +4,7 @@
 
 Appreciation website for my parents.
 
-[Live site](henryvuong.com/thank-you-mom-and-dad.com)
+[Live site](https://www.henryvuong.com/thank-you-mom-and-dad)
 
 # Features
 - [x] Envelope animation
